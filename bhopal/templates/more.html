@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0683059c5b.js" crossorigin="anonymous"></script>
+    <style>
+        
+
+        .ap p {
+            font-size: 18px;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            
+        }
+
+        .container {
+            background-color: bisque;
+        }
+        
+        .had {
+            background-image: linear-gradient(green, yellow);
+            padding: 10px;
+
+        }
+              
+
+        .pic {
+            height: 125px;
+            object-fit: cover;
+        }
+
+        .van {
+            font-weight: bolder;
+            font-style: italic;
+            transition: all 0.3s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .van:hover {
+            background-color: chartreuse;
+            text-transform: uppercase;
+            font-size: 22px;
+
+        }
+
+        .gg:hover {
+            background-color: aqua;
+        }
+
+        .tt {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .tt:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gh:hover {
+            background-color: rgb(90, 232, 90);
+        }
+
+        .ll {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .ll:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gj:hover {
+            background-color: coral;
+        }
+
+        .hh {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .hh:hover {
+            background-color: aqua;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gk:hover {
+            background-color: #82FCEC;
+        }
+
+        .mu {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mu:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gl:hover {
+            background-color: lightsalmon;
+        }
+
+        .pa {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .pa:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ga:hover {
+            background-color: #6effd6;
+        }
+
+        .dam {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .dam:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gs:hover {
+            background-color: rgb(246, 132, 246);
+        }
+
+        .mall {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mall:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(255, 38, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gd:hover {
+            background-color: cyan;
+        }
+
+        .more {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .more:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navbar {
+    background-image: url(../static/back6.jpg);}
+
+        .lef {
+            max-width: 400px;
+            margin-right: 10px;            
+        }
+
+        .ri {
+            max-width: 400px;            
+        }
+
+        .amar {
+            margin-top: 50px;
+        }
+
+        .sanchi {
+            margin-top: 100px;
+        }
+
+        .satpura {
+            margin-top: 100px;
+        }
+
+        .vidisha {
+            margin-top: 80px;
+        }
+
+        .bhoj {
+            margin-top: 100px;
+        }
+
+        .raisen {
+            margin-top: 100px;
+        }
+
+        .pach {
+            margin-top: 90px;
+        }
+
+        .halal {
+            margin-top: 80px;
+        }
+
+        .kol {
+            margin-top: 80px;
+        }
+
+        .salkanpur {
+            margin-top: 130px;
+        }
+
+        .bhim {
+            margin-top: 130px;
+        }
+
+        .mor h4 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+
+        }
+
+        .mor p {
+            font-size: 18px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .mor h4 {
+            margin-bottom: 20px;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 50px;
+            text-shadow: 1px 1px red;
+            transition: all 0.3s linear;
+            font-size: 20px;
+        }
+        .mor h4:hover{
+            font-size: 22px;             
+        }
+        .lef {
+            height: 250px;  
+            width: 250px;   
+            margin-right: 10px;
+            transition: all 0.3s linear;        
+        }
+        .lef:hover{
+            height: 300px;
+            width: 300px;
+        }
+    
+        .ri {
+            height: 250px;  
+            width: 250px;  
+            transition: all 0.3s linear;
+        }
+        .ri:hover{
+            height: 300px;
+            width: 300px;
+        }
+        .hed {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 1px 1px red;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .amar:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .sanchi:hover {
+          
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .satpura:hover {
+          
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .vidisha:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .bhoj:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .raisen:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .pach:hover {
+           
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .halal:hover {
+          
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .kol:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .salkanpur:hover {
+           
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .bhim:hover {
+           
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .paz {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+       
+
+        .photo{
+        width:150px;
+    }
+    .g{
+        display:flex;
+        justify-content: right;
+    }
+
+    /* Footer */
+    .foot{
+        margin-top: 20px;
+    }
+    
+    #co {
+        text-align: center;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        text-shadow: 1px 1px rgb(255, 2, 2);
+        color: rgb(17, 16, 16);
+    }
+    .for{
+        background-image: linear-gradient(rgb(100, 174, 100),rgb(208, 74, 174),rgb(212, 238, 81));
+    }
+    .sum summary {
+        margin-bottom: 20px;
+        transition: all 0.3s linear;
+        font-size: 18px;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+    }
+    .sum summary:hover{
+        font-size: 22px;
+        text-shadow: 1px 1px red;
+    }
+     .pr{
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+    .fut .social {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fut .social a {
+        font-size: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 43px;
+    }
+
+    .fut .social a i {
+        transition: all 0.3s linear;
+    }
+
+    .fut .social a i:hover {
+        font-size: 40px;
+    }
+    .fut .social a .fa-facebook {
+     color: blue;
+  }
+
+  .fut .social a .fa-instagram {
+   color: rgb(230, 106, 127);
+  }
+
+  .fut .social a .fa-youtube {
+   color: red;
+  }
+
+  .fut .social a .fa-twitter {
+   color:  #1D9BF0;
+  }
+
+  .fut .social a .fa-google {
+       color: rgb(64, 64, 201);
+  }
+    .fut .copyright {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(24, 22, 23);
+    }
+
+    .map {
+        height: 480px;
+        width: auto;
+        margin-top: 0px;
+    }
+   
+    </style>
+
+
+</head>
+
+<body class="container">
+   
+    <header class="had">
+        <img src="{% static 'bhopal21.png' %}" class="img-fluid pic" alt="...">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a href="{% url 'index' %}"><img src="{% static 'ilove1.jpg' %}" class="rounded float-start photo"
+                        alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse g " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'temple' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Temples
+                            </a>
+                            <ul class="dropdown-menu gg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item tt" href="{% url 'birla' %}">Birla Mandir</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                                <li><a class="dropdown-item tt" href="{% url 'iskcon' %}">ISKCON Temple</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'karuna' %}">KarunaDham Temple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van " href="{% url 'lake' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lakes
+                            </a>
+                            <ul class="dropdown-menu gh" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item ll" href="{% url 'lower' %}">Lower Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'upper' %}">Upper
+                                        Lake/Bhojtal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'hotel' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hotels
+                            </a>
+                            <ul class="dropdown-menu gj" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item hh" href="{% url 'marriott' %}">Courtyard by
+                                        Marriott
+                                        Bhopal</a></li>
+                                <li><a class="dropdown-item hh" href="{% url 'jehan' %}">Jehan Numa Palace
+                                        Hotel</a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'radisson' %}">Radisson
+                                        Bhopal</a></li>
+
+                                <li><a class="dropdown-item hh" href="{% url 'taj' %}">Taj Lakefront
+                                        Bhopal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'museum' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Museums
+                            </a>
+                            <ul class="dropdown-menu gk" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mu" href="{% url 'golghar' %}">Golghar Museum</a>
+                                </li>
+                                <li><a class="dropdown-item mu" href="{% url 'indira' %}">Indira Gandhi
+                                        Rashtriya
+                                        Manav Sangrahalaya</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'tribal' %}">Madhya Pradesh
+                                        Tribal
+                                        Museum</a></li>
+
+
+                                <li><a class="dropdown-item mu" href="{% url 'science' %}">Regional Science
+                                        Center</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'regional' %}">Regional Museum
+                                        of
+                                        Natural History, Bhopal</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'state' %}">State Museum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'park' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parks
+                            </a>
+                            <ul class="dropdown-menu gl" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item pa" href="{% url 'chinar' %}">Chinar Park</a>
+                                </li>
+                                <li><a class="dropdown-item pa" href="{% url 'ekant' %}">Ekant Park</a></li>
+
+                                <li><a class="dropdown-item pa" href="{% url 'kamla' %}">Kamla Park</a></li>
+                                <li><a class="dropdown-item pa" href="{% url 'van' %}">Van Vihar National
+                                        Park</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'dam' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dams
+                            </a>
+                            <ul class="dropdown-menu ga" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item dam" href="{% url 'bhadbhada' %}">Bhadbhada
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kaliyasot' %}">Kaliyasot
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'mall' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Malls
+                            </a>
+                            <ul class="dropdown-menu gs" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mall" href="{% url 'ashima' %}">Ashima Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'aura' %}">Aura Mall</a></li>
+                                <li><a class="dropdown-item mall" href="{% url 'capital' %}">Capital Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'db' %}">DB City Mall</a></li>
+
+                                <li><a class="dropdown-item mall" href="{% url 'people' %}">Peoples Mall</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'more' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu gd" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item more" href="{% url 'amar' %}">Amargarh
+                                        Water Fall</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'bhim' %}">Bhimbetka Rock
+                                        Shelters</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                                        Bhojpur</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'halali' %}">Halali Dam</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'kolar' %}">Kolar Dam </a></li>
+                                <li><a class="dropdown-item more" href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'raisen' %}">Raisen</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'satpura' %}">Satpura National
+                                        Park,Hoshangabad</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'vidisha' %}">Vidisha</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h3 class="hed">MORE VISIT SITES AROUND BHOPAL</h3>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="{% static 'pach.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'sanchi.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'raisen-fort.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'sal1.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'amar3.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>  
+    <h3 class="hed">MORE VISIT SITES AROUND BHOPAL</h3>  
+    <div class="mor">
+        <div>
+            <div class="amar">
+                <h4><a href="{% url 'amar' %}">Amargarh Waterfall</a></h4>
+                <a href="{% url 'amar' %}"><img src="{% static 'amar2.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>
+                    If you’re looking for an adventure, and want to see a side of India that most people don’t know
+                    exists, then
+                    you need to check out Amargarh Falls. This hidden waterfall paradise is located in the heart of
+                    Ratapani
+                    Wildlife Sanctuary, and is home to some of the most beautiful waterfalls in the country. The forest
+                    here is quite
+                    dense, and is a haven for wild animals like sloth bears, tigers, leopards, foxes and deer.
+                    If you’re lucky, you might even see a blue-bull! In addition to being a great place for wildlife
+                    watching,
+                    the region of Amargarh Waterfalls is also rich in the traces left behind by early human settlements.
+                    There are
+                    numerous cave painting shelters scattered throughout the area, making it a truly unique place to
+                    explore. So
+                    what are you waiting for? Pack your bags and head to Amargarh Falls for an unforgettable experience!
+                </p>
+                <p>Amargarh waterfall situated in the lap of nature in the Vindhyachal mountain range near Khatpura on
+                    Bhopal-Shahganj road is attracting tourists with its beautiful beauty.
+                    Thousands of tourists are reaching here every day to see this picturesque view of nature. A large
+                    number of tourists are reaching from Bhopal, Hoshangabad, Obaidullaganj to see this attraction of
+                    Amargarh waterfall. Here from 10 in the morning till late evening the youth are seen having fun. The
+                    drizzling sprinkling in monsoon and the sound of gushing water in the midst of velvety greenery is
+                    mesmerizing the people here.</p>
+                <p> About 65 km away from Bhopal, the beauty of Amargarh Falls is in full swing. Amidst the drizzling
+                    showers, youths are also reaching here for trekking. Although falling with its full velocity, this
+                    waterfall is still untouched by tourists because the way to reach the waterfall is not easy.
+                    Amargarh Water Fall has become a new destination for Bhopalis. It is also quite thrilling. A lot of
+                    crowd was seen here on Sunday. The beauty of Amargarh water fall is becoming visible these days.
+                    This place near Bhopal takes you away from the hustle and bustle of the city to nature's delights.
+                    The Amargarh Waterfall built in the heart of the Ratapani Wildlife Sanctuary is also attracting
+                    selfie lovers. On the way to Shahganj, 65 km from Bhopal, these days a crowd of tourists is
+                    thronging to see this 45 meter high natural waterfall situated in the lap of Vindhyachal mountains
+                    in Khatpura village. Many tourists reached here on Sunday as well.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="bhim">
+                <h4><a href="{% url 'bhim' %}">Bhimbetka Rock
+                        Shelters</a></h4>
+                <a href="{% url 'bhim' %}"><img src="{% static 'bhim3.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Madhya Pradesh has a rich history which dates back to the pre-historic era. In the lap of lush green
+                    forest
+                    covers, at the southern edge of the Vindhya Hills, there lies a shelter of close to 500 pre-historic
+                    rock
+                    caves called the Bhimbetka Rock Shelter. Discovered in 1957, these paintings were mainly created by
+                    ancient
+                    man, as a means to communicate with each other and have served as a record of their lives for
+                    generations to
+                    come.
+                    The name 'Bhimbetka' is derived from the historic tale of Mahabharata. Legends have it that Bhim,
+                    one of the
+                    Pandavas sat ('baitha' in Hindi) in this place during their exile, and thus, the place got its name
+                    'Bhimbetka', the sitting place of Bhim.
+                    An excavation by Dr. Vishnu Wakankar in 1957-58 brought him to this historic masterpiece. In an
+                    accidental
+                    trip to the sanctuary of Ratapani, he came across these caves, and hence, Bhimbetka was discovered.
+                    Dr.
+                    Wakankar compared these caves to those he saw in Spain and France.
+                    These caves are an invaluable chronicle of history. Made in different periods of history, some
+                    paintings are
+                    around 30,000 years old. The paintings are an insight into the first traces of pre-historic mankind
+                    like
+                    lifestyle, festivals, hunting and agriculture. Out of the many, however only 12 caves are open for
+                    public
+                    viewing, and have been a topic of interest for several archaeologists since its discovery.
+                    Declared a World Heritage Site by UNESCO in 2003, it is home to more than 500 caves and rock
+                    shelters, all
+                    of them adorned with paintings.
+                    The use of natural colors has ensured that the paintings have endured better over time.
+                    Once in Bhimbetka, the rich verdant and scenic beauty around the area will leave you spellbound.</p>
+            </div>
+        </div>
+        <div>
+            <div class="bhoj">
+                <h4><a href="{% url 'bhoj' %}">Bhojeshwar Temple, Bhojpur</a></h4>
+                <a href="{% url 'bhoj' %}"><img src="{% static 'bhoj.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>
+                    Raja Bhoj built the Bhojeshwar temple around 1010-1055 AD but never completed it. Some say he
+                    shifted his focus and resources towards the Somnath temple that was being attacked by Mahmud of
+                    Ghazni…and then he passed away before he could complete the construction of this one. Others say
+                    that he wanted to build this temple in one day and so it remained incomplete after the day’s work.
+                    The latter, I highly doubt… but the locals are quite enthusiastic when they narrate this
+                    built-in-a-day story.
+                </p>
+                <p>This 12th century temple is not only one of the finest in the region, it also offers a unique insight
+                    into the construction process of the era.The origin of the town of Bhojpur can be credited to Raja
+                    Bhoj, the same man who founded Bhopal in the 11th century AD. Although Bhojpur clearly didn’t grow
+                    in the same way Bhopal did, it does still have one of the most significant heritage sites in the
+                    region – the Shiva temple of Bhojeshwar Mahadev.
+
+                    The 12th century Bhojeshwar Temple is considered to be one of the finest examples of temple
+                    architecture in the region. At its core is the abstract representation of the deity Shiva, or
+                    ‘linga’, in the temple sanctum. It’s 2.35 metres high with a circumference of nearly 6 metres. Above
+                    it is an ornately-carved ceiling with rock-carved sculptures.</p>
+                <p>
+                    What makes the Bhojeshwar Temple particularly interesting is the evidence of how it was designed and
+                    constructed. Carved on nearby rock surfaces are the architectural plans that would have been used as
+                    a reference while the temple was being built. You can also still see a ramp that large stones would
+                    have been pulled along to construct the upper levels.Another archaeological site nearby that is
+                    worth visiting is Ashapuri. This temple complex was built between the 9th and 11th centuries and
+                    consists of 24 temple bases with thousands of architectural fragments scattered around the
+                    hills.Ashapuri is considered to be one of the most remarkable medieval temple complexes in Central
+                    India and there’s currently a lot of work taking place to restore it.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="halal">
+                <h4><a href="{% url 'halali' %}">Halali Dam</a></h4>
+                <a href="{% url 'halali' %}"><img src="{% static 'halali1.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Halali Dam is a lakeside reservoir built on the Halali River in Raisen. Formerly known as Thal River,
+                    the pristine lake is 47 km from Bhopal to Sanchi is Halali the tributary of Betwa river. The
+                    catchment area of this project is around 699 sq km. The colossal dam is quite popular among locals
+                    of Bhopal as an excellent spot for picnic and boat rides. Apart from this, the reservoir is home to
+                    aquatic life forms such as catla, mrigal, mystus, rohu and chitala.The Halali reservoir is a
+                    reservoir in Madhya Pradesh state of India, spanning Bhopal, Raisen, and Vidisha districts. It is
+                    built on the Halali River, and lies 40 km northwards from the state capital Bhopal.</p>
+                <p>
+                    Halali Dam is also known as Samrat Ashok Sagar Project and Halali Project. This dam is built on
+                    Halali river. This dam is spread over a very large area. Halali Dam is located in Bhopal city about
+                    10 km from Bhopal Vidisha Highway. A resort has been built by MP Tourism in Halali Dam. Here you can
+                    stay and enjoy water activities. Here you can enjoy boat ride. The view of Halali Dam is very
+                    beautiful. If the rainy season comes here, this dam is full of water and the water flows
+                    overflowing, which looks like a very beautiful sight. If you go further here, you can also see a
+                    beautiful waterfall.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="kol">
+                <h4><a href="{% url 'kolar' %}">Kolar Dam</a></h4>
+                <a href="{% url 'kolar' %}"><img src="{% static 'kolar3.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>Kolar dam is located on 35 kms south-west of Bhopal city. It is built on Kolar river which is a
+                    tributary river of Narmada river. This dam is constructed near Lawakhweri village in Sehore
+                    district. This dam is mainly constructed for the purpose of arranging water availability to Bhopal
+                    city and for irrigation purpose in surrounding areas. Height of Kolar dam is 45 meters and its water
+                    storage capacity is 265 MCM. Dam water is a raw water source for Kolar Water Treatment Plant (KTP)
+                    which is managed by Public Health Engineering Department (PHED) of Madhya Pradesh. This plant avails
+                    approx. 153 MLD treated water to Bhopal city which is 60% of total water supply to city. Its water
+                    treatment plant is largest and best among water treatment plants arranging water supply to Bhopal
+                    city. It shows the importance of this dam to Bhopal. Recently it is gaining popularity as a nature
+                    tourism spot. It is counted among tourist spots around Bhopal city. Tourists from Bhopal often visit
+                    Kolar dam and enjoy the natural beauty of this area. In coming time, it will become a popular
+                    tourist spot as tourism department is working in this side.</p>
+            </div>
+        </div>
+        <div>
+            <div class="pach">
+                <h4><a href="{% url 'pachmarhi' %}">Pachmarhi</a></h4>
+                <a href="{% url 'pachmarhi' %}"><img src="{% static 'pach2.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Pachmarhi, is also known as 'Satpura ki Rani' (Queen of Satpura). It is located in the Satpura range
+                    beautifully, embellished by nature and history. It was discovered by Captain James Forsyth in 1857
+                    and is amongst the most popular hill stations in central India. Etched on Satpura range, the hills
+                    of Pachmarhi are mystically related to lord Shiva by means of legends passed down over generations.
+                    Located at an altitude of 1,067 meters, Pachmarhi is different from anything you’ll experience in
+                    Madhya Pradesh and is a perfect destination for a weekend getaway. Located at one of the hilly
+                    region in the state, the place is pretty popular with nature lovers, spiritual seekers, and
+                    sportspersons. Captain James Forsyth, a British Army Officer, came here in 1857 and the town
+                    interested him much. Caves-shrines of Shiva, dense forests, and steep-sided valleys located here
+                    offer a rich experience to the escapist travellers. Pack your bags to enjoy the feeling of calm that
+                    the magnificent nature gives. While exploring the extraordinary diversity of Madhya Pradesh, don’t
+                    miss out on this majestic landscape.</p>
+                <p>The name Pachmarhi is believed to be derived from the Hindi words Panch ("five") and Marhi ("caves").
+                    According to a legend, these caves were built by five Pandava brothers of Mahabharatha era during
+                    their
+                    thirteen years of exile. The caves are situated on a hilltop and provide an excellent vantage point.
+                    Pachmadhi region was Ruled by Bhonsale Kings।. It came under Marathas in 18th Century under
+                    SenaSahebSubha
+                    Maharaj Raghuji Raje Bhonsale.
+                    Before the British, the Pachmarhi region was under the kingdom of the Gond Bhagvat Singh, although
+                    it was
+                    not a populated village or town at that time. Captain James Forsyth of the British Army along with
+                    Subhedar
+                    Major Nathoo Ramji Powar who was later made the Kotwal (in charge of the armoury) of Pachmarhi,
+                    spotted the
+                    plateau in the Pachmarhi region in 1857, while leading his troops on the way to Jhansi.</p>
+            </div>
+        </div>
+        <div>
+            <div class="raisen">
+                <h4><a href="{% url 'raisen' %}">Raisen Fort</a></h4>
+                <a href="{% url 'raisen' %}"><img src="{% static 'raisen-fort.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>Raisen is a town and a municipality in Raisen district in the Indian state of Madhya Pradesh. It is
+                    the
+                    administrative headquarters of Raisen District. Raisen takes its name from the massive fort at the
+                    top of a
+                    hill. The town is located at the foot. The name is probably a corruption of Rajavasini or
+                    Rajasayan—the
+                    royal
+                    residence. The famous places to visit in Raisen district are Raisen Fort, Dargah, and Sanchi Stupa.
+                    Raisen
+                    is
+                    45.5 km from the state capital Bhopal.
+                    Raisen was repeatedly attacked by the Mughal Army in the early 16th century. In 1528, the first
+                    jauhar was
+                    led
+                    by Rani Chanderi. After the Mughal army left, the kingdom refused to accept orders from Delhi. After
+                    a long
+                    siege of Raisen fort, that exhausted all supplies within the fort, Rani Durgavati and 700 Raisen
+                    women
+                    committed
+                    the second jauhar in 1532, the men led by Lakshman Tomar committed saka. This refusal to submit to
+                    Mughal
+                    rule
+                    repeated, and in 1543 the third jauhar was led by Rani Ratnavali.</p>
+                <p>
+                    Raisen fort is one of the ancient forts of Madhya Pradesh built in 11th century. It is located on
+                    the north west corner of the Gondwana on a hilltop on Vindhyanchal range. It has been known for
+                    Shiva temple and Mahashivaratri celebrations. Raisen fort has strong connection with Sallam (Salame)
+                    dynasty of Gondwana who has also erected two strong forts ( Ginnaurgarh fort and Fatehgarh fort) in
+                    Bhopal Gondwana kingdom. Raja Sangram Shah and Rani Durgavati of Garha Mandla had strongholds
+                    through many other Rajput kings on this fort until 1564. Sher Shah Suri also repeatedly tried to
+                    capture this fort after the 15th century.
+
+                    Raisen in Madhya Pradesh was repeatedly attacked by the Mughal Army in the early 16th century. In
+                    1528, the first jauhar was led by Rani Chanderi. After the Mughal army left, the kingdom refused to
+                    accept orders from Delhi. After a long siege of Raisen fort, that exhausted all supplies within the
+                    fort, Rani Durgavati and 700 Raisen women committed the second jauhar in 1532, the men led by
+                    Lakshman Tuar committed saka. This refusal to submit to Mughal rule repeated, and in 1543 the third
+                    jauhar was led by Rani Ratnavali.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="salkanpur">
+                <h4><a href="{% url 'salkanpur' %}">Salkanpur Temple</a></h4>
+                <a href="{% url 'salkanpur' %}"><img src="{% static 'sal1.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>
+                    Salkanpur Durga Temple,This sacred siddhpeeth of Vindhyavasni Beejasan devi (one of the incarnation
+                    of the “Hindu”
+                    goddess “Durga” is on an 800 foot high hillrock, in the village Salkanpur near Rehti village,
+                    70 km from Bhopal.
+
+                    The deity, Ma Durga Beejasan is held in high esteem by her followers & local. Thousands of
+                    people visit this place everyday climbing more than 1000 steps. Every year a grand fair is
+                    held in salkanpur during Navratris. It is very old Temple but at present temple renovate by
+                    Salkanpur Trust. The deity, Ma Durga Beejasan is held in high esteem by her followers.
+                </p>
+                <p>Perched along the Vindhyan ranges at an altitude of 2100 feet, Salkanpur echoes its past glories, it
+                    has its
+                    own history,myths and beliefs that had made it a place blessed by god and sanctified by the faith of
+                    the
+                    pilgrims. Salankanpur with its natural hilly profile was originally the sacred place of Goddess
+                    Parvati. It
+                    is believed that one of the body parts of the goddess felled here when Lord Shiva was saving her
+                    from
+                    burning. With this mythology this place has gained its own religious value and its been now a
+                    pilgrimage for
+                    millions of Hindu people out here in India.
+                    Vindhyawasini Mata Temple Salkanpur is a sacred Siddhpeeth of Vindhyavasni Beejasan Devi (one of the
+                    incarnations of the Hindu goddess “Durga”), located on an 800-foot summit in the village of
+                    Salkanpur, near Rehti, India.The stairs of the summit feature are around 1400. Salkanpur is located
+                    70 km from Bhopal, the capital of Madhya Pradesh. This temple is considered one of the holiest
+                    temples for Hindus in India.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="sanchi">
+                <h4><a href="{% url 'sanchi' %}">Sanchi Stupa</a></h4>
+                <a href="{% url 'sanchi' %}"><img src="{% static 'sanchi2.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>The Great Stupa at Sanchi is one of the oldest stone structures in India, and an important monument
+                    of Indian
+                    Architecture. It was originally commissioned by the Mauryan emperor Ashoka the Great in the 3rd
+                    century
+                    BCE. Its nucleus was a simple hemispherical brick structure built over the relics of the Buddha. It
+                    was
+                    crowned by the 'chhatra', a parasol-like structure symbolising high rank, which was intended to
+                    honour and
+                    shelter the relics. The original construction work of this stupa was overseen by Ashoka, whose wife
+                    Devi was
+                    the daughter of a merchant of nearby Vidisha. Sanchi was also her birthplace as well as the venue of
+                    her and
+                    Ashoka's wedding. In the 1st century BCE, four elaborately carved toranas (ornamental gateways) and
+                    a
+                    balustrade encircling the entire structure were added. The Sanchi Stupa built during Mauryan period
+                    was made
+                    of bricks. The composite flourished until the 11th century.</p>
+                <p>
+                    Sanchi, a small town in the state of Madhya Pradesh, is the location of several Buddhist monuments
+                    dating from the third century BC to the twelfth century AD. The foundation of the hilltop temple
+                    complex was laid by the Mauryan emperor Ashoka (273-236 BC) when he built a total of eight stupas,
+                    one of which became known as the Great Stupa. The present Great Stupa (120 feet/37 meters wide and
+                    54 feet/17 meters tall) is, however, not the original one. It encases an earlier stupa of about half
+                    its current dimensions that was built of large burnt bricks and mud.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="satpura">
+                <h4><a href="{% url 'satpura' %}">Satpura National Park</a></h4>
+                <a href="{% url 'satpura' %}"><img src="{% static 'satpura.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Its name is derived from the Satpura Range. Satpura is a Sanskrit word, that means seven mountains
+                    (sapta – seven and pura – mountain). It was first explored by Captain James Forsyth of Bengal
+                    Lancers in 1862 while he was searching for Indian Freedom Fighter Tantya Tope. It is one of the
+                    first declared Reserved Forest Area of India due to its ecological and commercial importance. It
+                    became a Tiger Reserve in the year 2000 and therefore it is also called Satpura Tiger Reserve (STR).
+
+                    Satpura National Park, with inclusion of Pachmarhi & Bori Sanctuaries, Satpura Tiger Reserve it
+                    covers 1427 km2 of Hoshangabad and Chhindwara Districts of Madhya Pradesh.If you are fed-up of
+                    crowded wildlife sanctuaries, struggle for getting safari tickets, standing in a queue
+                    of safari jeeps, over-crowding of safari jeeps during wildlife sighting then Satpura National Park
+                    is the
+                    right solution for real wildlife lovers. It is the place where we will find peaceful jungle, away
+                    from
+                    hustle & bustle of safari jeeps, beautiful hilly terrains, deep gorges, rivulets, large herds of
+                    mammals,
+                    good birding. Untouched forest locations etc. of Satpura National Park is nurtured in the Satpura
+                    Ranges of
+                    Hoshangabad district in Madhya Pradesh. Total area of Satpura Tiger Reserve is 2133.307 sq. km. Its
+                    core
+                    area is of 1339.27 sq.kms and rest is buffer area. Various ways of wildlife watching distinguishes
+                    its from
+                    other tiger reserves of India. Here one can do jeep safari, elephant safari, walking safari &
+                    cannoeing,
+                    birding etc. Unspoiled Highland eco-system of Satpura National Park is unique in nature and was
+                    established
+                    in 1981.</p>
+            </div>
+        </div>
+        <div>
+            <div class="vidisha">
+                <h4><a href="{% url 'vidisha' %}">Vidisha</a></h4>
+                <a href="{% url 'vidisha' %}"><img src="{% static 'vidisha.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>
+                    The District derives its Name from the Head Quarters town of Vidisha. The earliest reference of
+                    Vidisha is contained in Ramayana by Valmiki. It is stated there that Shatrughna’s Son Shatrughati
+                    was placed in charge of Vidisha. In Brahmanical religious observance again, the place is called
+                    Bhadravati, the residence of Yuvanashva who supplied the famous horse to Yudhishthira during his
+                    Ashvamedha sacrifice.
+
+                    The historicity of the ancient city of Besnagar, three Kilometers from Vidisha and identified with
+                    ancient Vidisha, goes back to some centuries before the birth of Christ. Besnagar figures
+                    prominently in Buddhist, Jain and Brahmanical Literature in various forms such as Vessanagar,
+                    Vaisyanagar etc. Tradition connects the town with Raja Rukmangada who neglecting his own wife for
+                    the Apsara Visva named the town Vishvanagar after her.
+
+                    On the destruction of Besnagar, located on the western side of the river Betwa sometime after 7th
+                    century A.D., a new town sprang up on the Eastern bank of the River. This new town was known as
+                    Bhailaswamin or Bhillaswamin, the name of the place was later corrupted to ‘Bhilsa’ or Bhelsa. The
+                    name Bhelsa appears to have probably been obtained on account of the famous Suryamandir dedicated to
+                    God Sun.
+                </p>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="paz">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item ">
+                    <a class="page-link " href="{% url 'mall' %}">Previous</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="{% url 'temple' %}">1</a></li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="{% url 'lake' %}">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="{% url 'hotel' %}">3</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'museum' %}">4</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'park' %}">5</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'dam' %}">6</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'mall' %}">7</a></li>
+                <li class="page-item">
+                <li class="page-item active"><a class="page-link" href="{% url 'more' %}">8</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="foot">
+        <footer class="fut">
+            <details class="sum">
+                <summary>Privacy Policy</summary>
+                <p class="pr">This document contains the privacy and cookies policy for www.bhopaltourism7.pythonanywhere.com For
+                    the
+                    purposes of this privacy policy document the website shall be referred to as My Codeless Website. My
+                    Codeless
+                    Website is operated by Dutch Flavours, trading as My Codeless Website (we, us and our). Concerning
+                    the Data
+                    Protection Act 1998, we are the data controller.
+                    We understand that you do not want your personal information to be distributed indiscriminately. We
+                    aim to
+                    safeguard your privacy online. This document describes how we collect your information, what is done
+                    with the
+                    information, and the authority that you have concerning your information.
+                    My Codeless Website, you permit to the collection as well as use of information in accordance with
+                    this privacy
+                    policy.</p>
+            </details>
+            <details class="sum">
+                <summary>About Us</summary>
+                <p class="pr">We are Bhopal Tourism,We welcome you to the city of lakes, Bhopal, hope you like Bhopal and its
+                    surrounding
+                    tourist places. we have created this website in which we have covered almost all the tourist places
+                    of Bhopal
+                    and its surrounding areas.And also we have added the locations of all the tourist places: so that it
+                    is easy for
+                    you to reach them and we have added the fee and timing related of some places.Hope you like the
+                    website and it
+                    helps you.</p>
+                <p class="pr">Thanks for visiting our website!</p>
+            </details>
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <form action=" " method="POST" class="for">
+                            <h3 id="co">Contact Us</h3><br>
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><b>Name</b></label>
+                                <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Email address</b></label>
+                                <input type="text" name="email" placeholder="Your Email" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Mobile</b></label>
+                                <input type="text" name="mobile" placeholder="Your Mobile Number" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label"><b>Message</b></label>
+                                <textarea class="form-control" id="zx" name="message" placeholder="Message"></textarea>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary" style="width:200px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.8582087421!2d77.26580475125895!3d23.199347692490726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1676269555637!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/mybhopal/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bhopaltourism/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@bhopalyatra9230"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/BMCBhopal"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://bhopal.nic.in/en/"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p class="copyright">Copyright &COPY; 2023</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>

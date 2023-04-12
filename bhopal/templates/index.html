@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0683059c5b.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .raja {
+        width: 390px;
+        margin-right: 10px;
+    }
+
+
+    #vi {
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+
+    }
+
+    .container {
+        background-color: bisque;
+    }
+
+    .had {
+        background-image: linear-gradient(green, yellow);
+        padding: 10px;
+
+    }
+
+    .hedi {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bolder;
+        text-shadow: 1px 1px red;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .pic {
+        height: 125px;
+        object-fit: cover;
+    }
+
+    .van {
+        font-weight: bolder;
+        font-style: italic;
+        transition: all 0.3s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .van:hover {
+        background-color: chartreuse;
+        text-transform: uppercase;
+        font-size: 22px;
+
+    }
+
+    .gg:hover {
+        background-color: aqua;
+    }
+
+    .tt {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .tt:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gh:hover {
+        background-color: rgb(90, 232, 90);
+    }
+
+    .ll {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .ll:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gj:hover {
+        background-color: coral;
+    }
+
+    .hh {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .hh:hover {
+        background-color: aqua;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gk:hover {
+        background-color: #82FCEC;
+    }
+
+    .mu {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .mu:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gl:hover {
+        background-color: lightsalmon;
+    }
+
+    .pa {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .pa:hover {
+        background-color: chartreuse;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .ga:hover {
+        background-color: #6effd6;
+    }
+
+    .dam {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .dam:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gs:hover {
+        background-color: rgb(246, 132, 246);
+    }
+
+    .mall {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .mall:hover {
+        background-color: chartreuse;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(255, 38, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gd:hover {
+        background-color: cyan;
+    }
+
+    .more {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .more:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+
+    /* nav bar css end */
+
+    .history h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-weight: bolder;
+        font-style: italic;
+        text-shadow: 1px 1px red;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .history p {
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .l {
+        height: 250px;
+        width: 250px;
+        margin-right: 10px;
+        transition: all 0.3s linear;
+    }
+
+    .l:hover {
+        height: 300px;
+        width: 300px;
+    }
+
+    .r {
+        height: 250px;
+        width: 250px;
+        transition: all 0.3s linear;
+    }
+
+    .r:hover {
+        height: 300px;
+        width: 300px;
+    }
+
+    .hot ul {
+        margin-top: 60px;
+    }
+
+    .t ul {
+        margin-top: 20px;
+    }
+
+    .mal ul {
+        margin-top: 50px;
+    }
+
+    .jojo h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 50px;
+        font-weight: bolder;
+        text-shadow: 1px 1px red;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .jojo h4 a {
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 1px red;
+        font-style: italic;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .jojo h4 {
+        margin-bottom: 20px;
+    }
+
+    .mt h4 {
+        margin-top: 50px;
+        font-weight: bolder;
+        font-family: serif;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        font-style: italic;
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .mt h4 a {
+        transition: all 0.3s linear;
+    }
+
+    .mt h4 a:hover {
+        font-size: 30px;
+    }
+
+    .t:hover {
+        
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .lak:hover {
+        
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .hot:hover {
+       
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .muse:hover {
+       
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .par:hover {
+        
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .dm:hover {
+       
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .mal:hover {
+        
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    .mor:hover {
+        
+        transition: background-color, 2s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+
+    .mt p {
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 18px;
+        font-family: Cambria, Cochin Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .mt ul li {
+        margin-top: 20px;
+
+    }
+
+    .mt ul li a {
+        font-weight: bolder;
+        font-size: 18px;
+        transition: all 0.6s linear;
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .mt ul li :hover {
+        font-size: 22px;
+        text-shadow: 1px 1px red;
+    }
+
+    .paz {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo {
+        width: 150px;
+    }
+
+    .g {
+        display: flex;
+        justify-content: right;
+
+    }
+
+    .navbar {
+        background-image: url(../static/back6.jpg);
+    }
+
+
+
+    /* Footer */
+
+    #co {
+        text-align: center;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        text-shadow: 1px 1px rgb(255, 2, 2);
+        color: rgb(17, 16, 16);
+    }
+
+    .for {
+        background-image: linear-gradient(rgb(100, 174, 100), rgb(208, 74, 174), rgb(212, 238, 81));
+    }
+
+    .sum summary {
+        margin-bottom: 20px;
+        transition: all 0.3s linear;
+        font-size: 18px;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+    }
+
+    .sum summary:hover {
+        font-size: 22px;
+        text-shadow: 1px 1px red;
+    }
+
+    .pr {
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .fut .social {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fut .social a {
+        font-size: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 43px;
+    }
+
+    .fut .social a i {
+        transition: all 0.3s linear;
+    }
+
+    .fut .social a i:hover {
+        font-size: 40px;
+    }
+
+    .fut .social a .fa-facebook {
+        color: blue;
+    }
+
+    .fut .social a .fa-instagram {
+        color: rgb(230, 106, 127);
+    }
+
+    .fut .social a .fa-youtube {
+        color: red;
+    }
+
+    .fut .social a .fa-twitter {
+        color: #1D9BF0;
+    }
+
+    .fut .social a .fa-google {
+        color: rgb(64, 64, 201);
+    }
+
+    .fut .copyright {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(24, 22, 23);
+    }
+
+    .map {
+        height: 480px;
+        width: auto;
+    }
+</style>
+
+
+</head>
+
+<body class="">
+    
+    <header class="had">
+        <img src="{% static 'bhopal21.png' %}" class="img-fluid pic" alt="...">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a href="{% url 'index' %}"><img src="{% static 'ilove1.jpg' %}" class="rounded float-start photo"
+                        alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse g " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'temple' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Temples
+                            </a>
+                            <ul class="dropdown-menu gg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item tt" href="{% url 'birla' %}">Birla Mandir</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                                <li><a class="dropdown-item tt" href="{% url 'iskcon' %}">ISKCON Temple</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'karuna' %}">KarunaDham Temple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van " href="{% url 'lake' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lakes
+                            </a>
+                            <ul class="dropdown-menu gh" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item ll" href="{% url 'lower' %}">Lower Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'upper' %}">Upper
+                                        Lake/Bhojtal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'hotel' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hotels
+                            </a>
+                            <ul class="dropdown-menu gj" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item hh" href="{% url 'marriott' %}">Courtyard by
+                                        Marriott
+                                        Bhopal</a></li>
+                                <li><a class="dropdown-item hh" href="{% url 'jehan' %}">Jehan Numa Palace
+                                        Hotel</a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'radisson' %}">Radisson
+                                        Bhopal</a></li>
+
+                                <li><a class="dropdown-item hh" href="{% url 'taj' %}">Taj Lakefront
+                                        Bhopal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'museum' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Museums
+                            </a>
+                            <ul class="dropdown-menu gk" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mu" href="{% url 'golghar' %}">Golghar Museum</a>
+                                </li>
+                                <li><a class="dropdown-item mu" href="{% url 'indira' %}">Indira Gandhi
+                                        Rashtriya
+                                        Manav Sangrahalaya</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'tribal' %}">Madhya Pradesh
+                                        Tribal
+                                        Museum</a></li>
+
+
+                                <li><a class="dropdown-item mu" href="{% url 'science' %}">Regional Science
+                                        Center</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'regional' %}">Regional Museum
+                                        of
+                                        Natural History, Bhopal</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'state' %}">State Museum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'park' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parks
+                            </a>
+                            <ul class="dropdown-menu gl" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item pa" href="{% url 'chinar' %}">Chinar Park</a>
+                                </li>
+                                <li><a class="dropdown-item pa" href="{% url 'ekant' %}">Ekant Park</a></li>
+
+                                <li><a class="dropdown-item pa" href="{% url 'kamla' %}">Kamla Park</a></li>
+                                <li><a class="dropdown-item pa" href="{% url 'van' %}">Van Vihar National
+                                        Park</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'dam' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dams
+                            </a>
+                            <ul class="dropdown-menu ga" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item dam" href="{% url 'bhadbhada' %}">Bhadbhada
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kaliyasot' %}">Kaliyasot
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'mall' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Malls
+                            </a>
+                            <ul class="dropdown-menu gs" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mall" href="{% url 'ashima' %}">Ashima Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'aura' %}">Aura Mall</a></li>
+                                <li><a class="dropdown-item mall" href="{% url 'capital' %}">Capital Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'db' %}">DB City Mall</a></li>
+
+                                <li><a class="dropdown-item mall" href="{% url 'people' %}">Peoples Mall</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'more' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu gd" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item more" href="{% url 'amar' %}">Amargarh
+                                        Water Fall</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'bhim' %}">Bhimbetka Rock
+                                        Shelters</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                                        Bhojpur</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'halali' %}">Halali Dam</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'kolar' %}">Kolar Dam </a></li>
+                                <li><a class="dropdown-item more" href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'raisen' %}">Raisen</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'satpura' %}">Satpura National
+                                        Park,Hoshangabad</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'vidisha' %}">Vidisha</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h2 class="hedi">
+        <marquee behavior="alternate" direction="alternate">WELCOME TO THE CITY OF LAKES BHOPAL</marquee>
+    </h2>
+    <video id="vi" src="{% static 'Bhopal.mp4' %}" controls></video>
+    <div class="history">
+        <h2>HISTORY OF THE DISTRICT BHOPAL</h2>
+        <img src="{% static 'raja3.jpg' %}" class="rounded float-start raja" alt="..."></a>
+        <p>Bhopal district was carved out of the erstwhile Sehore District of Bhopal division vide M.P.Govt.
+            Notification dated 13th September, 1972.The district derives its name from the district head-quarters
+            town Bhopal which is also the capital of Madhya Pradesh. The etymology of the term Bhopal has been derived
+            fromits former name Bhojpal as would be evident form the following extract from the imperial Gazetter of
+            Central India,1908 P.240.</p>
+        <p>“The name (Bhopal) is popularly derived from Bhojpal or Bhoj’s dam, the great dam
+            which now holds up the Bhopal city lakes, and is said to have been built by a Minister of Raja Bhoj,the
+            Parmar ruler of Dhar.
+            The still greater work which formerly held up the Tal (lake) being attributed to this monarch himself. The
+            name is,
+            however, invariably pronounced, Bhupal and Dr. Fleet considers it to be derived simply from Bhupala, a King,
+            the popular derivation being an instance of the striving after a meaning so common in such cases.”</p>
+        <p>Initially the lake was quite big but as time has elapsed only a small portion of it has remained to be seen
+            as“Bada Talab” i.e. the upper lake. Since long there is a famous saying about Bhopal lake, “Talon mein tal
+            Bhopal tal, baki sab tallaiya”.
+            There is a legend that Bhopal, for long, was a part of “Mahakautar” a barrier of dense forests and hills,
+            outlined by the Narmada separating the north, from north to south.Early history of the territory comprising
+            Bhopal district was in oblivion. It was in the tenth century that the names of Rajput clans began to appear
+            in Malwa. The most notable of them was Raja Bhoj who was both a great scholar and a great warrior.After the
+            invasion by Altamash the Mohammadans began to infiltrate into Malwa which included Bhopal as a part. In 1401
+            Dilawar Khan Ghori took charge of this territory. He made Dhar as the capital of his kingdom. He was
+            succeeded by his son.</p>
+        <p>In the beginning of 14th century a Gond warrior called Yadoram established the Gond Kingdom with his
+            headquarters at Garha Mandla. The Gond dynasty had a number of powerful kings like Madan Shah, Gorakhdas,
+            Arjundas and
+            Sangram Shah. During the Mughal invasion in Malwa a sizeable area of the territory comprising Bhopal state
+            was under the possession of Gond Kingdom. These territories were known as Chaklas of which Chakla Ginnour
+            was
+            one consisting of 750 villages. Bhopal was a part of it. The Gond king Nizam Shah was the ruler of this
+            area.
+            Nizam Shah died of poisoning by Chain Shah. His widow, Kamlavati and son Naval Shah became helpless. Naval
+            Shah was a minor then. After the death of Nizam Shah, Rani Kamlavati came to an agreement with Dost Mohammed
+            Khan
+            to manage the affairs of the xvi state. Dost Mohammed Khan was a shrewd and cunning Afghan Sardar who began
+            acquiring smaller principalities. After the death of Rani Kamlavati. Dost Mohammed Khan seized the fort of
+            Ginnor, curbed the rebels, bestowing the grants according to their degree of control upon the rest and
+            earned their gratitude.</p>
+        <p>Bhopal, Madhya Pradesh is a city in the central Indian state of Madhya Pradesh. It is one of the India’s
+            greenest cities, which makes a place to feel awesome and impress tourist in from its own beauty of creature.
+            Bhopal is the second-cleanest city in India and is also the administrative headquarters of Bhopal district.
+            Bhopal city is also known as the city of lakes, because of innumerable of lakes exists over here. The State
+            Museum has fossils, beautiful paintings and very rare Jain sculptures which is so precious in designs.
+            Taj-ul-Masjid is one of Asia’s largest mosques, with white domes, minarets and a huge courtyard. Even on the
+            banks of the Upper Lake is Van Vihar National Park, home to tigers, lions and leopards very good place to
+            visit, with family and friends. Children’s will have a great time to spend their summer occasion also. The
+            big lake and small tank of Bhopal city are very popular. Along with this, there are many pools and tourist
+            places here. Bharat Heavy Limited (BHEL)also has a factory in Bhopal. This is a fascinating place for
+            tourists visiting Bhopal. Shaurya Smarak, Bharat Bhavan, Bhimbethka, Shaheed Bhawan, Birla Mandir, Van
+            Vihar, Water Park, DB Mall in Bhopal city all attract tourists visiting here. That is why Bhopal city
+            remains a centre of attraction for tourists visiting Bhopal. The Indira Gandhi National Human Museum in
+            Bhopal is set on 200 acres on the top of Shyamala Hill. 32 traditional and prehistoric rock paintings are
+            found in this museum. The museum complex has exhibited material depicting the life patterns of the original
+            inhabitants of forest provinces, mountains, coastal and other areas and the diverse original societies of
+            the country. This museum of Bhopal is the centre of most attraction. Apart from this, Shaukat Mahal, Sadar
+            Manzil, Gauhar Mahal, Bharat Bhawan, State Museum, Gandhi Bhavan, Van Vihar and Laxmi Narayan Temple, small
+            and big lake and aquarium are the places of interest.</p>
+    </div>
+    <div class="jojo">
+        <h2>Some Most Visit Destinations In Bhopal</h2>
+        <div class="mt">
+            <div class="t">
+                <h4><a href="{% url 'temple' %}">1.Temples</a></h4>
+                <a href="{% url 'temple' %}"><img src="{% static 'birla7.jpg' %}" class="rounded float-start l"
+                        alt="..."></a>
+                <p>Bhopal, the capital city of Madhya Pradesh, is studded with spectacular temples attracting devotees
+                    round the year. Temples in Bhopal are auspicious places where people pray, worship, and meditate.
+                    Hindu temples are known by many different names, varying on region and language, including
+                    Alayam, Mandir, Mandira, Ambalam, Gudi, Kavu, Koil, Kovil, Déul, Raul, Devasthana, Degul, Deva
+                    Mandiraya, and Devalaya. Hindu temple architecture is mainly divided into the Dravidian style of the
+                    south and the Nagara style of the north, with other regional styles.
+                    The basic elements of the Hindu temple remain the same across all periods and styles. The most
+                    essential feature is the inner sanctuary, the garbhagriha or womb-chamber, where the primary murti
+                    or cult image of a deity is housed in a simple bare cell. Around this chamber there are often other
+                    structures and buildings, in the largest cases covering several acres. On the exterior, the
+                    garbhagriha is crowned by a tower-like shikhara, also called the vimana in the south. The shrine
+                    building may include an ambulatory for parikrama (circumambulation), one or more mandapas or
+                    congregation halls, and sometimes an antarala antechamber and porch between garbhagriha and mandapa.
+                    A Hindu temple is a symbolic house, the seat and dwelling of Hindu gods.There are many temples in
+                    Bhopal. Sri Radha Krishna Mandir, Manua Bhan Ki Tekri, Khatla Pura Temple, Shri Madhya Swami Malai
+                    Temple, etc.</p>
+                <ul>
+                    <li><a href="{% url 'birla' %}">Birla Mandir</a>
+                    </li>
+                    <li><a href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                    <li><a href="{% url 'iskcon' %}">ISKCON Temple</a>
+                    </li>
+                    <li><a href="{% url 'karuna' %}">KarunaDham Temple</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="lak">
+                <h4><a href="{% url 'lake' %}">2.Lakes</a></h4>
+                <a href="{% url 'lake' %}"><img src="{% static 'upper3.jpg' %}" class="rounded float-end r"
+                        alt="..."></a>
+                <p>Well-known for its lakes and in-fact christened as the “City of Lakes”, Bhopal quietly makes its’
+                    charm felt among the tourists because of the immaculate beauty of the lakes. These charming lakes
+                    provide a chance for tourists to indulge in water sports and have unlimited fun and frolic. While
+                    some of the lakes are a gift of nature to Bhopal, others have been artificially made.
+                    The Lakes in Bhopal are one of the major tourist attractions here. One just can’t afford to miss the
+                    beauty and tranquillity that Bhopals’ lakes have to offer.There are many lakes in Bhopal.</p>
+                <p>
+                    Bhopal is a city of lakes, there is no doubt about it and those who haven't seen it don't feel like
+                    their own. There are many small and big new and old lakes here, which keep the beauty of the city
+                    intact in every part. Everyone has their own importance, and history too.The Lakes in Bhopal are one
+                    of the major tourist attractions here. One just can’t afford to miss the beauty and tranquillity
+                    that Bhopals’ lakes have to offer.Motia Talaab, Nawab Siddique Hasan Khan Talaab, Munshi Hussain
+                    Khan
+                    Talaab, Lendiya Talaab, Jawahar Baal Udhyaan Lake, Sarangpani Lake, Manit Lake, etc.</p>
+                <ul>
+                    <li><a href="{% url 'lower' %}">Lower Lake</a></li>
+                    <li><a href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                    <li><a href="{% url 'upper' %}">Upper
+                            Lake/Bhojtal</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="hot">
+                <h4><a href="{% url 'hotel' %}">3.Hotels</a></h4>
+                <a href="{% url 'hotel' %}"><img src="{% static 'taj1.jpeg' %}" class="rounded float-start l"
+                        alt="..."></a>
+                <p>Nestled in the center of India in Madhya Pradesh, Bhopal is the most verdant city in the country. The
+                    emerald-green city displays its national heritage through its sublime 19th and 20th-century Mughal
+                    architecture and its rich culture through its people, cuisine, and markets. Bhopal is also a city of
+                    contrasts where modernity has taken shape in upmarket areas like the Shyamla Hills, where visitors
+                    will find eclectic luxurious resorts and hotels. Bhopal attracts couples with its lush scenery.
+                    Bhopal’s Van Vihar National Park, where you can see tigers, leopards, crocodiles, and pythons, is
+                    becoming increasingly popular with tourists. The Museum of Man, which portrays the daily lives of
+                    people from various indigenous tribes in India, is another must-see. Clearly, there are plenty of
+                    things to do here. If this sounds like your next romantic travel destination, then consider our
+                    comprehensive list of hotels for couples in Bhopal, India below.Fab Hotel Eleven Heights, Sayaji
+                    Bhopal, FabHotel La Pearl, Hotel Tulsi Exotic, Hotel Manjeet, etc.</p>
+                <ul>
+                    <li><a href="{% url 'marriott' %}">Courtyard by
+                            Marriott
+                            Bhopal</a></li>
+                    <li><a href="{% url 'jehan' %}">Jehan Numa Palace
+                            Hotel</a>
+                    </li>
+                    <li><a href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                        </a>
+                    </li>
+                    <li><a href="{% url 'radisson' %}">Radisson
+                            Bhopal</a></li>
+                    <li><a href="{% url 'taj' %}">Taj Lakefront
+                            Bhopal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="muse">
+                <h4><a href="{% url 'museum' %}">4.Museums</a></h4>
+                <a href="{% url 'museum' %}"><img src="{% static 'indira4.jpg' %}" class="rounded float-end r"
+                        alt="..."></a>
+                <p>Bhopal gets its name from Bhojpal and is rich when it comes to showcasing indigenous art,
+                    fossils and sculptures. The city has spectacular museums including State Museum, Tribal
+                    Museum and Golghar Museum.
+                    State Museum,Located on Shymala Hills, the State Museum houses the best of art and culture of Madhya
+                    Pradesh. One can see state’s sculptural masterpieces, fossils, coins, stamps, autographs,
+                    weapons, bagh paintings, excavated objects and articles associated with India’s freedom
+                    struggle. The archaeological museum is spread across 17 different galleries. Don’t miss ‘The
+                    Black Penny’, the first postage stamp of the world which was issued in 1840 with Queen
+                    Victoria’s picture on it.Tribal Museum,The Madhya Pradesh Tribal Museum focuses on the tribal art
+                    form of Madhya Pradesh. The
+                    museum has six different galleries; Cultural Diversity, Tribal Lifestyle, Tribal Aesthetic, Tribal
+                    Spiritual World, Chhattisgarh Gallery and Exhibition Gallery. One can experience the lifestyle
+                    of native tribes of the state, specifically Gond, Baiga, Bhil, Korku, Bharia, Kol and Saharia by
+                    looking at size replicas of their dwellings in tribal lifestyle gallery. You can also buy tribal
+                    jewellery, souvenirs and regional books at Chinhari, a local museum shop. The museum is
+                    more of a subject of experience in itself.Golghar Museum, Golghar was built in the era of Nawab Shah
+                    Jahan Begum of Bhopal. The round-shaped
+                    building with a dome, which earlier housed the office of Shahjahan Begum was transformed
+                    into a remarkable museum in the year 2013. The museum has a great collection of
+                    handwritten letters, crockery, paintings, musical instruments and crafts used during the
+                    Nawabi era. It was in this building that Shahjahan Begum imparted the art of nakkashi,
+                    zardozi and batua-making to women.our comprehensive list of museums in Bhopal,
+                    India.Yodhasthal, Birla Museum, Archaeological Museum,
+                    Pragati Deergha - Progress Gallery, Veethi Sankul, etc.</p>
+                <ul>
+                    <li><a href="{% url 'golghar' %}">Golghar Museum</a>
+                    </li>
+                    <li><a href="{% url 'indira' %}">Indira Gandhi
+                            Rashtriya
+                            Manav Sangrahalaya - National Museum of Mankind</a></li>
+                    <li><a href="{% url 'tribal' %}">Madhya Pradesh
+                            Tribal
+                            Museum</a></li>
+                    <li><a href="{% url 'science' %}">Regional Science
+                            Center</a></li>
+                    <li><a href="{% url 'regional' %}">Regional Museum
+                            of
+                            Natural History, Bhopal</a></li>
+                    <li><a href="{% url 'state' %}">State Museum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="par">
+                <h4><a href="{% url 'park' %}">5.Parks</a></h4>
+                <a href="{% url 'park' %}"><img src="{% static 'van6.jpg' %}" class="rounded float-start l"
+                        alt="..."></a>
+                <p>Heritage and history mean little to city authorities responsible for the maintenance of Bhopal’s
+                    parks. Like the historic Yadgar-e-Shahjahani Park, which is being used more for holding sit-ins and
+                    demonstrations, pushing out those just wanting a pleasant walk in the park. Shahjahani Park,
+                    situated close to the Lower Lake, is a heritage site (established in 1890) where once people
+                    gathered to take part in the 1942 Quit India Movement.
+                    Unchecked illegal dumping of municipal solid waste in Shahjahani Park and its periodic use by groups
+                    for organizing protests and sit-ins has led to its present deplorable condition. Last year, the BMC
+                    had also proposed construction of a sewage treatment plant (STP) within the park premises, despite
+                    vehement protests by citizens and environmentalists.
+                    But some good sense seems to have at last prevailed, with Madhya Pradesh Urban Development Minister
+                    Jaivardhan Singh recently announcing that the proposed STP would be shifted to another location and
+                    that the Bhopal Municipal Corporation (BMC) would revamp three of the city’s most important parks,
+                    the Yaadgare-Shahjahani Park, Neelam Park, and Shahpura Park. Neelam Park is situated near the lower
+                    lake. It has a musical foundation which has not been functional for some time now. This park has
+                    also been the venue of many agitations and dharnas.
+                    “All three parks would be developed at a cost of Rs 2.5 crore,” said Jaivardhan Singh, son of former
+                    chief minister Digvijay Singh. “The parks will get new swings, pathways, benches, fountains, new
+                    gates, open gym, gazebo, paving blocks, among other things”. The funds for this have been sanctioned
+                    under the Atal Mission for Rejuvenation and Urban Transformation (AMRUT).
+                    The minister also said necessary action was being taken to develop the STP near Shahpura. This would
+                    ensure untreated effluents are not directly discharged into Shahpura Lake, the third most important
+                    lake in the city after the upper and lower lakes. Shahpura Park along the Shahpura Lake, a man-made
+                    lake, is an important wetland in the heart of the city and supports a rich biodiversity. The lake
+                    provides hydrological resources including groundwater recharge and flood mitigation. Shahpura Park
+                    and Neelam Park also provide socio-cultural and recreational benefits besides creating an aesthetic
+                    landscape and are popular outings for residents living nearby.Ecological Park, Kamla Nehru Bal
+                    Udhyan, Neelam Park, Children's Park (BHEL PARK), Mayoor park, Bhopal, Vardhman park, lake view,
+                    Kilol Park, etc.
+                </p>
+                <ul>
+                    <li><a href="{% url 'chinar' %}">Chinar Park</a></li>
+                    <li><a href="{% url 'ekant' %}">Ekant Park</a></li>
+                    <li><a href="{% url 'kamla' %}">Kamla Park</a></li>
+                    <li><a href="{% url 'van' %}">Van Vihar National Park</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="dm">
+                <h4><a href="{% url 'dam' %}">6.Dams</a></h4>
+                <a href="{% url 'dam' %}"><img src="{% static 'kaliya2.jpg' %}" class="rounded float-end r"
+                        alt="..."></a>
+                <p>Travelers are voting Bhadbhada Dam, Halali Dam and Kolar Dam as the best of 4 dams near Bhopal. There
+                    are 2 dams near Sehore a city just 39 km from Bhopal and 2 dams near Hoshangabad which is 75 km
+                    distant. The most popular of these are Kolar Dam near Sehore and Tawa Dam in Hoshangabad. You can
+                    find 14 dams in Madhya Pradesh and 239 dams in the country of India. Our members favorite in Madhya
+                    Pradesh is Bhadbhada Dam and Tehri Dam is the top pick in India. Hataikheda Dam, The mini dam,
+                    etc.Some names of dams given below.</p>
+                <ul>
+                    <li><a href="{% url 'bhadbhada' %}">Bhadbhada
+                            Dam</a></li>
+                    <li><a href="{% url 'halali' %}">Halali Dam</a></li>
+                    <li><a href="{% url 'kaliyasot' %}">Kaliyasot
+                            Dam</a></li>
+                    <li><a href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                    <li><a href="{% url 'kolar' %}">Kolar
+                            Dam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="mal">
+                <h4><a href="{% url 'mall' %}">7.Malls</a></h4>
+                <a href="{% url 'mall' %}"><img src="{% static 'db1.jpg' %}" class="rounded float-start l"
+                        alt="..."></a>
+                <p>Bhopal is also known as the city of lakes has always been known to provide peace to both its
+                    residents and the visitors through its soothing and tranquilising environment. It is also known to
+                    showcase its best location and spots. Below are the best malls in Bhopal that are proven to be a
+                    good hangout spot for families and friends.Bhopal is the capital of the state of Madhya Pradesh in
+                    India. Bhopal is recognized as the City of Lakes because of its numerous natural & artificial lakes
+                    and one of India's greenest cities.This magical city is well known for its shopping destinations
+                    alongside its lakes.its best location and spots. Below are the best malls in Bhopal that are proven
+                    to be a
+                    good hangout spot for families and friends.Bhopal is the capital of the state of Madhya Pradesh in
+                    India. Bhopal is recognized as the City of Lakes because of its numerous natural & artificial lakes
+                    and one of India's greenest cities.This magical city is well known for its shopping destinations
+                    alongside its lakes. So, whenever you're in Bhopal,check these malls City Walk Mall,
+                    Vardhaman Mall,Minal Mall,Gammon India Mall, etc.don't miss out on the best shopping malls listed
+                    below.</p>
+                <ul>
+                    <li><a href="{% url 'ashima' %}">Ashima Mall</a>
+                    </li>
+                    <li><a href="{% url 'aura' %}">Aura Mall</a></li>
+                    <li><a href="{% url 'capital' %}">Capital Mall</a>
+                    </li>
+                    <li><a href="{% url 'db' %}">DB City Mall</a></li>
+                    <li><a href="{% url 'people' %}">Peoples Mall</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt">
+            <div class="mor">
+                <h4><a href="{% url 'more' %}">8.More</a></h4>
+                <a href="{% url 'more' %}"><img src="{% static 'more123.jpg' %}" class="rounded float-end r"
+                        alt="..."></a>
+                <p>Bhopal resides in Madhya Pradesh and has a contrasting landscape around it. Also, there are many
+                    religious shrines and two jyotirlingas located near Bhopal. There are around 100 places to visit
+                    near Bhopal that are waiting to get explored. The places are famous not only in India but across the
+                    globe and people often come here to spend good time to explore all these places. Most places are
+                    also a perfect weekend getaway near Bhopal. Some of them are listed below and adorned with the title
+                    of UNESCO world heritage like Khajuraho Temple and Sanchi Stupa. Nearby cities like Ujjain, Gwalior,
+                    Indore, Mandu have great monuments of ancient times that are preserved to date.Madhya Pradesh, the
+                    heart of the country India, is a destination that never fails to surprise. With so many places to
+                    visit near Bhopal, this destination is always action-packed for all kinds of travellers. Take a look
+                    at the amazing list of destinations that have made it! With temples, falls, ghats and on the banks
+                    of river Narmada, Bori Wildlife Sanctuary, Itarsi,Islamnagar Fort, Islamnagar,Ralamandal Wildlife
+                    Sanctuary,Taj Ul Masjid Bhopal,Shaurya Smarak Bhopal, etc. Here is the compiled list.</p>
+                <ul>
+                    <li><a href="{% url 'amar' %}">Amargarh
+                            Water Fall</a></li>
+                    <li><a href="{% url 'bhim' %}">Bhimbetka Rock
+                            Shelters</a>
+                    </li>
+                    <li><a href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                            Bhojpur</a></li>
+                    <li><a href="{% url 'halali' %}">Halali Dam</a></li>
+                    <li><a href="{% url 'kolar' %}">Kolar Dam </a></li>
+                    <li><a href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                    </li>
+                    <li><a href="{% url 'raisen' %}">Raisen</a></li>
+                    <li><a href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                    </li>
+                    <li><a href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                    </li>
+                    <li><a href="{% url 'satpura' %}">Satpura National
+                            Park,Hoshangabad</a></li>
+                    <li><a href="{% url 'vidisha' %}">Vidisha</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="paz">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item ">
+                    <a class="page-link active" href="#">Pre</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="{% url 'temple' %}">1</a></li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="{% url 'lake' %}">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="{% url 'hotel' %}">3</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'museum' %}">4</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'park' %}">5</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'dam' %}">6</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'mall' %}">7</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'more' %}">8</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'temple' %}">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="foot">
+        <footer class="fut">            
+            <details class="sum">
+                <summary>Privacy Policy</summary>
+                <p class="pr">This document contains the privacy and cookies policy for
+                    www.bhopaltourism7.pythonanywhere.com For
+                    the
+                    purposes of this privacy policy document the website shall be referred to as My Codeless Website. My
+                    Codeless
+                    Website is operated by Dutch Flavours, trading as My Codeless Website (we, us and our). Concerning
+                    the Data
+                    Protection Act 1998, we are the data controller.
+                    We understand that you do not want your personal information to be distributed indiscriminately. We
+                    aim to
+                    safeguard your privacy online. This document describes how we collect your information, what is done
+                    with the
+                    information, and the authority that you have concerning your information.
+                    My Codeless Website, you permit to the collection as well as use of information in accordance with
+                    this privacy
+                    policy.</p>
+            </details>
+            <details class="sum">
+                <summary>About Us</summary>
+                <p class="pr">We are Bhopal Tourism,We welcome you to the city of lakes, Bhopal, hope you like Bhopal
+                    and its
+                    surrounding
+                    tourist places. we have created this website in which we have covered almost all the tourist places
+                    of Bhopal
+                    and its surrounding areas.And also we have added the locations of all the tourist places: so that it
+                    is easy for
+                    you to reach them and we have added the fee and timing related of some places.Hope you like the
+                    website and it
+                    helps you.</p>
+                <p class="pr">Thanks for visiting our website!</p>
+            </details>        
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <form action=" " method="POST" class="for">
+                            <h3 id="co">Contact Us</h3><br>
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><b>Name</b></label>
+                                <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Email address</b></label>
+                                <input type="text" name="email" placeholder="Your Email" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Mobile</b></label>
+                                <input type="text" name="mobile" placeholder="Your Mobile Number" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label"><b>Message</b></label>
+                                <textarea class="form-control" id="zx" name="message" placeholder="Message"></textarea>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary" style="width:200px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.8582087421!2d77.26580475125895!3d23.199347692490726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1676269555637!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/mybhopal/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bhopaltourism/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@bhopalyatra9230"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/BMCBhopal"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://bhopal.nic.in/en/"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p class="copyright">Copyright &COPY; 2023</p>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

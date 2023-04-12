@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0683059c5b.js" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/color/jquery.color.plus-names-2.2.0.min.js"
+    integrity="sha256-97quMNaesEFsrV6uexbIR3+D1V1+75CVDXuLBFQ07lA=" crossorigin="anonymous"></script>
+   
+</head>
+<style>
+    .container {
+        background-color: bisque;
+    }
+    
+    .had {
+        background-image: linear-gradient(green, yellow);
+        padding: 10px;
+
+    }
+    .hed {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: bolder;
+        text-shadow: 1px 1px red;
+        font-style: italic;
+    font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }        
+
+    .pic {
+        height: 125px;
+        object-fit: cover;
+    }
+
+    .van {
+        font-weight: bolder;
+        font-style: italic;
+        transition: all 0.3s linear;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .van:hover {
+        background-color: chartreuse;
+        text-transform: uppercase;
+        font-size: 22px;
+
+    }
+
+    .gg:hover {
+        background-color: aqua;
+    }
+
+    .tt {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .tt:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gh:hover {
+        background-color: rgb(90, 232, 90);
+    }
+
+    .ll {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .ll:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gj:hover {
+        background-color: coral;
+    }
+
+    .hh {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .hh:hover {
+        background-color: aqua;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gk:hover {
+        background-color: #82FCEC;
+    }
+
+    .mu {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .mu:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gl:hover {
+        background-color: lightsalmon;
+    }
+
+    .pa {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .pa:hover {
+        background-color: chartreuse;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .ga:hover {
+        background-color: #6effd6;
+    }
+
+    .dam {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .dam:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gs:hover {
+        background-color: rgb(246, 132, 246);
+    }
+
+    .mall {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .mall:hover {
+        background-color: chartreuse;
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(255, 38, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .gd:hover {
+        background-color: cyan;
+    }
+
+    .more {
+        font-size: 15px;
+        transition: all 0.3s linear;
+    }
+
+    .more:hover {
+        background-color: yellow;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .navbar {
+background-image: url(../static/back6.jpg);
+}
+.photo{
+        width:150px;
+    }
+    .g{
+        display:flex;
+        justify-content: right;
+    }
+
+    .chi {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .chin {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .eka {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .ekan {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .kam {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .kaml {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .vanv {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .viha {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .p {
+        margin-top: 20px;
+    }
+    .gol {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .golgh {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .ind {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .indi {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .tri {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .trib {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .sci {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .scie {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .nat {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .natu {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .sta {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .stat {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .ash {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .ashi {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .aur {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .auraa {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .cap {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .capi {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .dbm {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .denik {
+        display: none;
+        border-radius: 25%;
+    }
+
+    .peo {
+        display: none;
+        text-align: center;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+
+    .peop {
+        display: none;
+        border-radius: 25%;
+    }
+    h1{
+        text-align: center;
+        text-shadow: 1px 1px red;
+        font-weight: bolder;
+        font-style: italic;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .h{
+        text-align: center;
+        text-shadow: 1px 1px red;
+        font-weight: bolder;
+        font-style: italic;
+        margin-top: 30px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3{
+        text-align: center;
+        text-shadow: 1px 1px rgb(205, 50, 50);
+        font-weight: bolder;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .bttn{
+        text-align: center;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    td{
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+
+    /* Footer */
+
+    .foot{
+        margin-top: 20px;
+    }
+    
+    #co {
+        text-align: center;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        text-shadow: 1px 1px rgb(255, 2, 2);
+        color: rgb(17, 16, 16);
+    }
+    .for{
+        background-image: linear-gradient(rgb(100, 174, 100),rgb(208, 74, 174),rgb(212, 238, 81));
+    }
+    .sum summary {
+        margin-bottom: 20px;
+        transition: all 0.3s linear;
+        font-size: 18px;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+    }
+    .sum summary:hover{
+        font-size: 22px;
+        text-shadow: 1px 1px red;
+    }
+     .pr{
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+    .fut .social {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fut .social a {
+        font-size: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 43px;
+    }
+
+    .fut .social a i {
+        transition: all 0.3s linear;
+    }
+
+    .fut .social a i:hover {
+        font-size: 40px;
+    }
+    .fut .social a .fa-facebook {
+     color: blue;
+  }
+
+  .fut .social a .fa-instagram {
+   color: rgb(230, 106, 127);
+  }
+
+  .fut .social a .fa-youtube {
+   color: red;
+  }
+
+  .fut .social a .fa-twitter {
+   color:  #1D9BF0;
+  }
+
+  .fut .social a .fa-google {
+       color: rgb(64, 64, 201);
+  }
+    .fut .copyright {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(24, 22, 23);
+    }
+
+    .map {
+            height: 480px;
+            width: auto;
+            margin-top: 0px;
+        }
+   
+</style>
+
+<body class="container">
+    
+    <header class="had">
+        <img src="{% static 'bhopal21.png' %}" class="img-fluid pic" alt="...">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a href="{% url 'index' %}"><img src="{% static 'ilove1.jpg' %}" class="rounded float-start photo"
+                        alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse g " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'temple' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Temples
+                            </a>
+                            <ul class="dropdown-menu gg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item tt" href="{% url 'birla' %}">Birla Mandir</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                                <li><a class="dropdown-item tt" href="{% url 'iskcon' %}">ISKCON Temple</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'karuna' %}">KarunaDham Temple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van " href="{% url 'lake' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lakes
+                            </a>
+                            <ul class="dropdown-menu gh" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item ll" href="{% url 'lower' %}">Lower Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'upper' %}">Upper
+                                        Lake/Bhojtal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'hotel' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hotels
+                            </a>
+                            <ul class="dropdown-menu gj" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item hh" href="{% url 'marriott' %}">Courtyard by
+                                        Marriott
+                                        Bhopal</a></li>
+                                <li><a class="dropdown-item hh" href="{% url 'jehan' %}">Jehan Numa Palace
+                                        Hotel</a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'radisson' %}">Radisson
+                                        Bhopal</a></li>
+
+                                <li><a class="dropdown-item hh" href="{% url 'taj' %}">Taj Lakefront
+                                        Bhopal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'museum' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Museums
+                            </a>
+                            <ul class="dropdown-menu gk" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mu" href="{% url 'golghar' %}">Golghar Museum</a>
+                                </li>
+                                <li><a class="dropdown-item mu" href="{% url 'indira' %}">Indira Gandhi
+                                        Rashtriya
+                                        Manav Sangrahalaya</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'tribal' %}">Madhya Pradesh
+                                        Tribal
+                                        Museum</a></li>
+
+
+                                <li><a class="dropdown-item mu" href="{% url 'science' %}">Regional Science
+                                        Center</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'regional' %}">Regional Museum
+                                        of
+                                        Natural History, Bhopal</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'state' %}">State Museum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'park' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parks
+                            </a>
+                            <ul class="dropdown-menu gl" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item pa" href="{% url 'chinar' %}">Chinar Park</a>
+                                </li>
+                                <li><a class="dropdown-item pa" href="{% url 'ekant' %}">Ekant Park</a></li>
+
+                                <li><a class="dropdown-item pa" href="{% url 'kamla' %}">Kamla Park</a></li>
+                                <li><a class="dropdown-item pa" href="{% url 'van' %}">Van Vihar National
+                                        Park</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'dam' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dams
+                            </a>
+                            <ul class="dropdown-menu ga" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item dam" href="{% url 'bhadbhada' %}">Bhadbhada
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kaliyasot' %}">Kaliyasot
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'mall' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Malls
+                            </a>
+                            <ul class="dropdown-menu gs" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mall" href="{% url 'ashima' %}">Ashima Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'aura' %}">Aura Mall</a></li>
+                                <li><a class="dropdown-item mall" href="{% url 'capital' %}">Capital Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'db' %}">DB City Mall</a></li>
+
+                                <li><a class="dropdown-item mall" href="{% url 'people' %}">Peoples Mall</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'more' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu gd" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item more" href="{% url 'amar' %}">Amargarh
+                                        Water Fall</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'bhim' %}">Bhimbetka Rock
+                                        Shelters</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                                        Bhojpur</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'halali' %}">Halali Dam</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'kolar' %}">Kolar Dam </a></li>
+                                <li><a class="dropdown-item more" href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'raisen' %}">Raisen</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'satpura' %}">Satpura National
+                                        Park,Hoshangabad</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'vidisha' %}">Vidisha</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>PARKS TIMING & ENTRY FEES</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+        <div class="col">
+            <div class="card">
+                <h3>CHINAR PARK</h3>
+                <img src="{% static 'chinar3.jpg' %}" class="img-thumbnail chin" alt="...">
+                <button id="a" class="bttn">click here</button>
+                <h5 class="card-title chi">Timing</h5>
+                <table class="table table-bordered chin ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>7:00 Am - 7:00 Pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>EKANT PARK</h3>
+                <img src="{% static 'ekant1.jpg' %}" class="img-thumbnail ekan" alt="...">
+                <button id="b"  class="bttn" >click here </button>
+                <h5 class="card-title eka">Timing</h5>
+                <table class="table table-bordered ekan">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>6am - 11am</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>KAMLA PARK</h3>
+                <img src="{% static 'kamla2.jpg' %}" class="img-thumbnail kaml" alt="...">
+                <button id="c"  class="bttn">click here </button>
+                <h5 class="card-title kam">Timing</h5>
+                <table class="table table-bordered kaml">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>05:00PM - 09:00PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card">
+                <h3>VAN VIHAR NATIONAL PARK</h3>
+                <img src="{% static 'van5.jpg' %}" alt="" class="viha">
+                <button id="d"  class="bttn">click here </button>
+                <h5 class="card-title vanv">Timing</h5>
+                <table class="table table-bordered viha">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>6:30 am - 6:30 pm (1st Aug to 30th Oct & 16th Feb to 15th Apr)<br>
+                                6:30 am - 6:00 pm (1st Nov to 15th Feb)<br>
+                                6:00 am - 7:00 pm (16th Apr to 31st July)</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>6:30 am - 6:30 pm (1st Aug to 30th Oct & 16th Feb to 15th Apr)<br>
+                                6:30 am - 6:00 pm (1st Nov to 15th Feb)<br>
+                                6:00 am - 7:00 pm (16th Apr to 31st July)</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>6:30 am - 6:30 pm (1st Aug to 30th Oct & 16th Feb to 15th Apr)<br>
+                                6:30 am - 6:00 pm (1st Nov to 15th Feb)<br>
+                                6:00 am - 7:00 pm (16th Apr to 31st July)</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>6:30 am - 6:30 pm (1st Aug to 30th Oct & 16th Feb to 15th Apr)<br>
+                                6:30 am - 6:00 pm (1st Nov to 15th Feb)<br>
+                                6:00 am - 7:00 pm (16th Apr to 31st July)</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Closed / Holiday</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>6:30 am - 6:30 pm (1st Aug to 30th Oct & 16th Feb to 15th Apr)<br>
+                                6:30 am - 6:00 pm (1st Nov to 15th Feb)<br>
+                                6:00 am - 7:00 pm (16th Apr to 31st July)</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>6:30 am - 6:30 pm (1st Aug to 30th Oct & 16th Feb to 15th Apr)<br>
+                                6:30 am - 6:00 pm (1st Nov to 15th Feb)<br>
+                                6:00 am - 7:00 pm (16th Apr to 31st July)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="p">
+                    <h5 class="card-title vanv">Entry Fee</h5>
+                    <table class="table table-bordered viha">
+                        <thead>
+                            <tr>
+                                <th scope="col">S.No.</th>
+                                <th scope="col">Particular</th>
+                                <th scope="col">Indians</th>
+                                <th scope="col">Foreigners</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>Individual on Foot / Cycling</td>
+                                <td>INR 20</td>
+                                <td>INR 30</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>2 Wheelers (Max 2 persons per Vehicle)</td>
+                                <td>INR 60</td>
+                                <td>INR 60</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3.</th>
+                                <td>Auto Rickshaw (Max 4 persons including driver)</td>
+                                <td>INR 120</td>
+                                <td>INR 120</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4.</th>
+                                <td>Car / Light Vehicles / SUV's (Max 8 persons including driver)</td>
+                                <td>INR 250</td>
+                                <td>INR 250</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5.</th>
+                                <td>Mini Bus (Max 20 persons, extra will be charged pro rata)</td>
+                                <td>INR 1100</td>
+                                <td>INR 2200</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6.</th>
+                                <td>Trekking Longer Duration (More than 2 hours on fixed route) per person</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7.</th>
+                                <td>Movie Making including Still Photography (Per Person / Per Day) upto 7 days</td>
+                                <td>---</td>
+                                <td>INR 20000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8.</th>
+                                <td>Commercial Photography / Videography (Per Person / Per Day) 8 - 15 days</td>
+                                <td>---</td>
+                                <td>INR 15000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9.</th>
+                                <td>Internal Area Safari (min 6 persons) rate per person</td>
+                                <td>INR 50</td>
+                                <td>INR 50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="h">MUSEUMS TIMING & ENTRY FEES</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+        <div class="col">
+            <div class="card">
+                <h3>GOLGHAR MUSEUM</h3>
+                <img src="{% static 'gol.jpeg' %}" alt="" class="golgh">
+                <button id="e"  class="bttn">click here </button>
+                <h5 class="card-title gol">Timing</h5>
+                <table class="table table-bordered golgh ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed </td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10:30am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10:30am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10:30am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10:30am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:30am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10:30am - 5pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>INDIRA GANDHI RASHTRIYA MANAV SANGRAHALAYA</h3>
+                <img src="{% static 'indira.jpg' %}" class="img-thumbnail indi" alt="...">
+                <button id="f"  class="bttn">click here </button>
+                <h5 class="card-title ind">Timing</h5>
+                <table class="table table-bordered indi">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed / Holiday</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>11:00 am - 6:30 pm (Mar - Aug)<br>
+                                10:00 am - 5:30 pm (Sep - Feb) </td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>11:00 am - 6:30 pm (Mar - Aug)<br>
+                                10:00 am - 5:30 pm (Sep - Feb) </td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>11:00 am - 6:30 pm (Mar - Aug)<br>
+                                10:00 am - 5:30 pm (Sep - Feb) </td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11:00 am - 6:30 pm (Mar - Aug)<br>
+                                10:00 am - 5:30 pm (Sep - Feb) </td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>11:00 am - 6:30 pm (Mar - Aug)<br>
+                                10:00 am - 5:30 pm (Sep - Feb) </td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>11:00 am - 6:30 pm (Mar - Aug)<br>
+                                10:00 am - 5:30 pm (Sep - Feb) </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>MADHYA PRADESH TRIBAL MUSEUM</h3>
+                <img src="{% static 'tribal2.jpg' %}" class="img-thumbnail trib" alt="...">
+                <button id="g"  class="bttn">click here </button>
+                <h5 class="card-title tri">Timing</h5>
+                <table class="table table-bordered trib">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed </td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>12:00 Noon to 07:00 PM </td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>12:00 Noon to 07:00 PM </td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>12:00 Noon to 07:00 PM </td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>12:00 Noon to 07:00 PM </td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>12:00 Noon to 07:00 PM </td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12:00 Noon to 07:00 PM </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="p">
+                    <h5 class="card-title tri">FEES</h5>
+                    <table class="table table-bordered trib">
+                        <thead>
+                            <tr>
+                                <th scope="col">Particular</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Indian Citizen</td>
+                                <td>INR 20/- Per Person (10 Years or Older)</td>
+                            </tr>
+                            <tr>
+                                <td>Foreigner Citizen</td>
+                                <td>INR 400/- Per Person (10 Years or Older)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Photography - Fee </td>
+                                <td>INR 100/- (Camera without stand/tripod/flash)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>REGIONAL SCIENCE CENTER</h3>
+                <img src="{% static 'science.jpg' %}" class="img-thumbnail scie" alt="...">
+                <button id="h"  class="bttn">click here </button>
+                <h5 class="card-title sci">Timing</h5>
+                <table class="table table-bordered scie">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10:30 am - 6:00 pm </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="">
+                    <h5 class="card-title sci">FEES</h5>
+                    <table class="table table-bordered scie">
+                        <thead>
+                            <tr>
+                                <th>SL.No</th>
+                                <th>Particulars</th>
+                                <th>General Visitors</th>
+                                <th>Group Visitors (25 or More)</th>
+                                <th>Students in Organised School Group</th>
+                                <th>Students from Govt / Muncipal Schools</th>
+                                <th>Timings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Entry Ticket to Science Centre </td>
+                                <td>INR 25</td>
+                                <td>INR 20</td>
+                                <td>INR 10</td>
+                                <td>INR 5</td>
+                                <td>10:30 am to 6:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>3D Film Show </td>
+                                <td>INR 20</td>
+                                <td>INR 15</td>
+                                <td>INR 10</td>
+                                <td>INR 5</td>
+                                <td>12:00 pm noon, 2:00 pm &amp; 4:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Taramandal/Science Film Show/SDL</td>
+                                <td>INR 10</td>
+                                <td>INR 10</td>
+                                <td>INR 10</td>
+                                <td>INR 5</td>
+                                <td>12:00 pm noon, 3:00 pm &amp; 5:00 pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>REGIONAL MUSEUM OF NATURAL HISTORY</h3>
+                <img src="{% static 'regional.jpg' %}" class="img-thumbnail natu" alt="...">
+                <button id="i"  class="bttn">click here </button>
+                <h5 class="card-title nat">TIMING</h5>
+                <table class="table table-bordered natu">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+                            <th scope="col">Entry</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed </td>
+                            <td>----</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10 AM - 6 PM</td>
+                            <td>INR 50 for Person</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10 AM - 6 PM</td>
+                            <td>INR 50 for Person</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10 AM - 6 PM</td>
+                            <td>INR 50 for Person</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10 AM - 6 PM</td>
+                            <td>INR 50 for Person</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10 AM - 6 PM</td>
+                            <td>INR 50 for Person</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10 AM - 6 PM</td>
+                            <td>INR 50 for Person</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>STATE MUSEUM</h3>
+                <img src="{% static 'state.jpg' %}" class="img-thumbnail stat" alt="...">
+                <button id="j"  class="bttn">click here</button>
+                <h5 class="card-title sta">TIMING</h5>
+                <table class="table table-bordered stat">
+                    <thead>
+                        <tr>
+                            <th scope="col">Days</th>
+                            <th scope="col">Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10:30 am - 05:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10:30 am - 05:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10:30 am - 05:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10:30 am - 05:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:30 am - 05:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10:30 am - 05:30 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="p">
+                    <h5 class="card-title sta">FEES</h5>
+                    <table class="table table-bordered stat">
+                        <thead>
+                            <tr>
+                                <th scope="col">Particular</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Indian</td>
+                                <td>INR 100</td>
+                            </tr>
+                            <tr>
+                                <td>Foreigner</td>
+                                <td>INR 100</td>
+                            </tr>
+                            <tr>
+                                <td>Camera</td>
+                                <td>INR 50</td>
+                            </tr>
+                            <tr>
+                                <td>Video</td>
+                                <td>INR 200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 class="h">MALLS TIMING </h1>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 p">
+        <div class="col">
+            <div class="card">
+                <h3>ASHIMA MALL</h3>
+                <img src="{% static 'ashima.jpg' %}" alt="" class="ashi">
+                <button id="k"  class="bttn">click here </button>
+                <h5 class="card-title ash">TIMING</h5>
+                <table class="table table-bordered ashi ">
+                    <thead>
+                        <tr>
+                            <th scope="col">DAYS</th>
+                            <th scope="col">TIMING</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MONDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                        <tr>
+                            <td>TUESDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                        <tr>
+                            <td>WEDNESDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                        <tr>
+                            <td>THURSDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                        <tr>
+                            <td>FRIDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                        <tr>
+                            <td>SATURDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                        <tr>
+                            <td>SUNDAY</td>
+                            <td>11am - 11pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>AURA MALL</h3>
+                <img src="{% static 'aura.jpg' %}" class="img-thumbnail auraa" alt="...">
+                <button id="l"  class="bttn">click here</button>
+                <h5 class="card-title aur">TIMING</h5>
+                <table class="table table-bordered auraa">
+                    <thead>
+                        <tr>
+                            <th scope="col">DAYS</th>
+                            <th scope="col">TIMING</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MONDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>TUESDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>WEDNESDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>THURSDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>FRIDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>SATURDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>SUNDAY</td>
+                            <td>11am - 9pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>CAPITAL MALL</h3>
+                <img src="{% static 'cap.png' %}" class="img-thumbnail capi" alt="...">
+                <button id="m"  class="bttn">click here </button>
+                <h5 class="card-title cap">TIMING</h5>
+                <table class="table table-bordered capi">
+                    <thead>
+                        <tr>
+                            <th scope="col">DAYS</th>
+                            <th scope="col">TIMING</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MONDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>TUESDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>WEDNESDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>THURSDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>FRIDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>SATURDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>SUNDAY</td>
+                            <td>11am - 10pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3>DB CITY MALL</h3>
+                <img src="{% static 'db.jpg' %}" class="img-thumbnail denik" alt="...">
+                <button id="n"  class="bttn">click here</button>
+                <h5 class="card-title dbm">TIMING</h5>
+                <table class="table table-bordered denik ">
+                    <thead>
+                        <tr>
+                            <th scope="col">DAYS</th>
+                            <th scope="col">TIMING</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MONDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>TUESDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>WEDNESDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>THURSDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>FRIDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>SATURDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                        <tr>
+                            <td>SUNDAY</td>
+                            <td>10:30 am - 10:30 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>PEOPLE'S MALL</h3>
+                <img src="{% static 'pep.jpg' %}" class="img-thumbnail peop" alt="...">
+                <button id="o"  class="bttn">click here </button>
+                <h5 class="card-title peo">TIMING</h5>
+                <table class="table table-bordered peop">
+                    <thead>
+                        <tr>
+                            <th scope="col">DAYS</th>
+                            <th scope="col">TIMING</th>
+                            <th>ENTRY FEE</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MONDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                        <tr>
+                            <td>TUESDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                        <tr>
+                            <td>WEDNESDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                        <tr>
+                            <td>THURSDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                        <tr>
+                            <td>FRIDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                        <tr>
+                            <td>SATURDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                        <tr>
+                            <td>SUNDAY</td>
+                            <td>09:00 am - 09:00 pm</td>
+                            <td>INR 350</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="foot">
+        <footer class="fut">
+            <details class="sum">
+                <summary>Privacy Policy</summary>
+                <p class="pr">This document contains the privacy and cookies policy for www.bhopaltourism7.pythonanywhere.com For
+                    the
+                    purposes of this privacy policy document the website shall be referred to as My Codeless Website. My
+                    Codeless
+                    Website is operated by Dutch Flavours, trading as My Codeless Website (we, us and our). Concerning
+                    the Data
+                    Protection Act 1998, we are the data controller.
+                    We understand that you do not want your personal information to be distributed indiscriminately. We
+                    aim to
+                    safeguard your privacy online. This document describes how we collect your information, what is done
+                    with the
+                    information, and the authority that you have concerning your information.
+                    My Codeless Website, you permit to the collection as well as use of information in accordance with
+                    this privacy
+                    policy.</p>
+            </details>
+            <details class="sum">
+                <summary>About Us</summary>
+                <p class="pr">We are Bhopal Tourism,We welcome you to the city of lakes, Bhopal, hope you like Bhopal and its
+                    surrounding
+                    tourist places. we have created this website in which we have covered almost all the tourist places
+                    of Bhopal
+                    and its surrounding areas.And also we have added the locations of all the tourist places: so that it
+                    is easy for
+                    you to reach them and we have added the fee and timing related of some places.Hope you like the
+                    website and it
+                    helps you.</p>
+                <p class="pr">Thanks for visiting our website!</p>
+            </details>
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <form action=" " method="POST" class="for">
+                            <h3 id="co">Contact Us</h3><br>
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><b>Name</b></label>
+                                <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Email address</b></label>
+                                <input type="text" name="email" placeholder="Your Email" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Mobile</b></label>
+                                <input type="text" name="mobile" placeholder="Your Mobile Number" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label"><b>Message</b></label>
+                                <textarea class="form-control" id="zx" name="message" placeholder="Message"></textarea>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary" style="width:200px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.8582087421!2d77.26580475125895!3d23.199347692490726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1676269555637!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/mybhopal/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bhopaltourism/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@bhopalyatra9230"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/BMCBhopal"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://bhopal.nic.in/en/"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p class="copyright">Copyright &COPY; 2023</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+
+    <script>
+        $('#a').click(() => {
+            $('.chi').slideToggle()
+            $('.chin').slideToggle()
+
+        })
+        $('#b').click(() => {
+            $('.eka').slideToggle()
+            $('.ekan').slideToggle()
+
+        })
+        $('#c').click(() => {
+            $('.kam').slideToggle()
+            $('.kaml').slideToggle()
+
+        })
+        $('#d').click(() => {
+            $('.vanv').slideToggle()
+            $('.viha').slideToggle()
+
+        })
+        $('#e').click(() => {
+            $('.gol').slideToggle()
+            $('.golgh').slideToggle()
+
+        })
+        $('#f').click(() => {
+            $('.ind').slideToggle()
+            $('.indi').slideToggle()
+
+        })
+        $('#g').click(() => {
+            $('.tri').slideToggle()
+            $('.trib').slideToggle()
+
+        })
+        $('#h').click(() => {
+            $('.sci').slideToggle()
+            $('.scie').slideToggle()
+
+        })
+        $('#i').click(() => {
+            $('.nat').slideToggle()
+            $('.natu').slideToggle()
+
+        })
+        $('#j').click(() => {
+            $('.sta').slideToggle()
+            $('.stat').slideToggle()
+
+        })
+        $('#k').click(() => {
+            $('.ash').slideToggle()
+            $('.ashi').slideToggle()
+
+        })
+        $('#l').click(() => {
+            $('.aur').slideToggle()
+            $('.auraa').slideToggle()
+
+        })
+        $('#m').click(() => {
+            $('.cap').slideToggle()
+            $('.capi').slideToggle()
+
+        })
+        $('#n').click(() => {
+            $('.dbm').slideToggle()
+            $('.denik').slideToggle()
+
+        })
+        $('#o').click(() => {
+            $('.peo').slideToggle()
+            $('.peop').slideToggle()
+
+        })
+
+    </script>
+    
+    
+</body>
+
+</html>

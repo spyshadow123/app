@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0683059c5b.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            background-color: bisque;
+        }
+        
+        .had {
+            background-image: linear-gradient(green, yellow);
+            padding: 10px;
+
+        }
+        .hed {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 1px 1px red;
+            font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }        
+
+        .pic {
+            height: 125px;
+            object-fit: cover;
+        }
+
+        .van {
+            font-weight: bolder;
+            font-style: italic;
+            transition: all 0.3s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .van:hover {
+            background-color: chartreuse;
+            text-transform: uppercase;
+            font-size: 22px;
+
+        }
+
+        .gg:hover {
+            background-color: aqua;
+        }
+
+        .tt {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .tt:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gh:hover {
+            background-color: rgb(90, 232, 90);
+        }
+
+        .ll {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .ll:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gj:hover {
+            background-color: coral;
+        }
+
+        .hh {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .hh:hover {
+            background-color: aqua;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gk:hover {
+            background-color: #82FCEC;
+        }
+
+        .mu {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mu:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gl:hover {
+            background-color: lightsalmon;
+        }
+
+        .pa {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .pa:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ga:hover {
+            background-color: #6effd6;
+        }
+
+        .dam {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .dam:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gs:hover {
+            background-color: rgb(246, 132, 246);
+        }
+
+        .mall {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mall:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(255, 38, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gd:hover {
+            background-color: cyan;
+        }
+
+        .more {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .more:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navbar {
+    background-image: url(../static/back6.jpg);
+}
+.ap p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+        .lef {
+            max-width: 400px;
+            margin-right: 10px;
+        }
+
+        .ri {
+            max-width: 400px;
+        }
+        .photo{
+        width:150px;
+    }
+    .g{
+        display:flex;
+        justify-content: right;
+    }
+   
+
+    /* Footer */
+    .foot{
+        margin-top: 20px;
+    }
+    
+    #co {
+        text-align: center;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        text-shadow: 1px 1px rgb(255, 2, 2);
+        color: rgb(17, 16, 16);
+    }
+    .for{
+        background-image: linear-gradient(rgb(100, 174, 100),rgb(208, 74, 174),rgb(212, 238, 81));
+    }
+    .sum summary {
+        margin-bottom: 20px;
+        transition: all 0.3s linear;
+        font-size: 18px;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+    }
+    .sum summary:hover{
+        font-size: 22px;
+        text-shadow: 1px 1px red;
+    }
+     .pr{
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+    .fut .social {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fut .social a {
+        font-size: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 43px;
+    }
+
+    .fut .social a i {
+        transition: all 0.3s linear;
+    }
+
+    .fut .social a i:hover {
+        font-size: 40px;
+    }
+    .fut .social a .fa-facebook {
+     color: blue;
+  }
+
+  .fut .social a .fa-instagram {
+   color: rgb(230, 106, 127);
+  }
+
+  .fut .social a .fa-youtube {
+   color: red;
+  }
+
+  .fut .social a .fa-twitter {
+   color:  #1D9BF0;
+  }
+
+  .fut .social a .fa-google {
+       color: rgb(64, 64, 201);
+  }
+    .fut .copyright {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(24, 22, 23);
+    }
+
+    .map {
+        height: 480px;
+        width: auto;
+        margin-top: 0px;
+    }
+   
+    </style>
+
+
+</head>
+
+<body class="container">
+   
+    <header class="had">
+        <img src="{% static 'bhopal21.png' %}" class="img-fluid pic" alt="...">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a href="{% url 'index' %}"><img src="{% static 'ilove1.jpg' %}" class="rounded float-start photo"
+                        alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse g " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'temple' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Temples
+                            </a>
+                            <ul class="dropdown-menu gg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item tt" href="{% url 'birla' %}">Birla Mandir</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                                <li><a class="dropdown-item tt" href="{% url 'iskcon' %}">ISKCON Temple</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'karuna' %}">KarunaDham Temple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van " href="{% url 'lake' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lakes
+                            </a>
+                            <ul class="dropdown-menu gh" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item ll" href="{% url 'lower' %}">Lower Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'upper' %}">Upper
+                                        Lake/Bhojtal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'hotel' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hotels
+                            </a>
+                            <ul class="dropdown-menu gj" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item hh" href="{% url 'marriott' %}">Courtyard by
+                                        Marriott
+                                        Bhopal</a></li>
+                                <li><a class="dropdown-item hh" href="{% url 'jehan' %}">Jehan Numa Palace
+                                        Hotel</a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'radisson' %}">Radisson
+                                        Bhopal</a></li>
+
+                                <li><a class="dropdown-item hh" href="{% url 'taj' %}">Taj Lakefront
+                                        Bhopal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'museum' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Museums
+                            </a>
+                            <ul class="dropdown-menu gk" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mu" href="{% url 'golghar' %}">Golghar Museum</a>
+                                </li>
+                                <li><a class="dropdown-item mu" href="{% url 'indira' %}">Indira Gandhi
+                                        Rashtriya
+                                        Manav Sangrahalaya</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'tribal' %}">Madhya Pradesh
+                                        Tribal
+                                        Museum</a></li>
+
+
+                                <li><a class="dropdown-item mu" href="{% url 'science' %}">Regional Science
+                                        Center</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'regional' %}">Regional Museum
+                                        of
+                                        Natural History, Bhopal</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'state' %}">State Museum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'park' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parks
+                            </a>
+                            <ul class="dropdown-menu gl" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item pa" href="{% url 'chinar' %}">Chinar Park</a>
+                                </li>
+                                <li><a class="dropdown-item pa" href="{% url 'ekant' %}">Ekant Park</a></li>
+
+                                <li><a class="dropdown-item pa" href="{% url 'kamla' %}">Kamla Park</a></li>
+                                <li><a class="dropdown-item pa" href="{% url 'van' %}">Van Vihar National
+                                        Park</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'dam' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dams
+                            </a>
+                            <ul class="dropdown-menu ga" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item dam" href="{% url 'bhadbhada' %}">Bhadbhada
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kaliyasot' %}">Kaliyasot
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'mall' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Malls
+                            </a>
+                            <ul class="dropdown-menu gs" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mall" href="{% url 'ashima' %}">Ashima Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'aura' %}">Aura Mall</a></li>
+                                <li><a class="dropdown-item mall" href="{% url 'capital' %}">Capital Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'db' %}">DB City Mall</a></li>
+
+                                <li><a class="dropdown-item mall" href="{% url 'people' %}">Peoples Mall</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'more' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu gd" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item more" href="{% url 'amar' %}">Amargarh
+                                        Water Fall</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'bhim' %}">Bhimbetka Rock
+                                        Shelters</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                                        Bhojpur</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'halali' %}">Halali Dam</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'kolar' %}">Kolar Dam </a></li>
+                                <li><a class="dropdown-item more" href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'raisen' %}">Raisen</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'satpura' %}">Satpura National
+                                        Park,Hoshangabad</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'vidisha' %}">Vidisha</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h2 class="hed">RAISEN PLACES</h2>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="{% static 'raisen-fort.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'gupta-temple.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'barna-dam ra.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'mahadev.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="ap">
+        <h3 class="hed">ABOUT</h3>
+        <p>Raisen is a town and a municipality in Raisen district in the Indian state of Madhya Pradesh. It is the
+            administrative headquarters of Raisen District. Raisen takes its name from the massive fort at the top of a
+            hill. The town is located at the foot. The name is probably a corruption of Rajavasini or Rajasayan—the
+            royal
+            residence. The famous places to visit in Raisen district are Raisen Fort, Dargah, and Sanchi Stupa. Raisen
+            is
+            45.5 km from the state capital Bhopal.
+            Raisen was repeatedly attacked by the Mughal Army in the early 16th century. In 1528, the first jauhar was
+            led
+            by Rani Chanderi. After the Mughal army left, the kingdom refused to accept orders from Delhi. After a long
+            siege of Raisen fort, that exhausted all supplies within the fort, Rani Durgavati and 700 Raisen women
+            committed
+            the second jauhar in 1532, the men led by Lakshman Tomar committed saka. This refusal to submit to Mughal
+            rule
+            repeated, and in 1543 the third jauhar was led by Rani Ratnavali.</p>
+        <h3 class="hed">RAISEN FORT</h3>
+        <img src="{% static 'fort.jpg' %}" class="rounded float-start lef" alt="...">
+        <p>Raisen fort is one of the ancient forts of Madhya Pradesh built in 11th century. It is located on the north
+            west corner of the Gondwana on a hilltop on Vindhyanchal range. It has been known for Shiva temple and
+            Mahashivaratri  celebrations. Raisen fort has strong connection with Sallam (Salame) dynasty of Gondwana who has also
+            erected
+            two strong forts ( Ginnaurgarh fort and Fatehgarh fort) in Bhopal Gondwana kingdom. Raja Sangram Shah and
+            Rani
+            Durgavati of Garha Mandla had strongholds through many other Rajput kings on this fort until 1564. Sher Shah
+            Suri also repeatedly tried to capture this fort after the 15th century.
+            Raisen in Madhya Pradesh was repeatedly attacked by the Mughal Army in the early 16th century. In 1528, the
+            first jauhar was led by Rani Chanderi. After the Mughal army left, the kingdom refused to accept orders from
+            Delhi. After a long siege of Raisen fort, that exhausted all supplies within the fort, Rani Durgavati and
+            700
+            Raisen women committed the second jauhar in 1532, the men led by Lakshman Tuar committed saka. This refusal
+            to
+            submit to Mughal rule repeated, and in 1543 the third jauhar was led by Rani Ratnavali.</p>
+            <div class="col">
+                <div class="card">
+                </div>
+            </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7327.5021217848425!2d77.76844027469669!3d23.324789239203284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c184b99f86a19%3A0x2bc667536028d7fd!2sRaisen%20Fort%2C%20Raisen%2C%20Madhya%20Pradesh%20464551!5e0!3m2!1sen!2sin!4v1665370312089!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="hed">MAHADEV PAANI WATERFALL</h3>
+        <img src="{% static 'mahadev.jpg' %}" class="rounded float-end ri" alt="...">
+        <p>The Ratapani Wildlife Sanctuary near Bhopal is bustling with the beauty of the wilderness and is one of the
+            best
+            places to find tranquility in a place away from the hectic rush of the city life. And in the Ratapani
+            forests
+            lies the majestic beauty of the Mahadev Paani Waterfall.Flocked by a number of migratory birds arriving here
+            in
+            different seasons, the area around the Mahadev Paani waterfall is one of the perfect fits for an adventurous
+            trekking. With a natural pool forming at the waterfall, the trek in itself brings you close to the Mahadev
+            himself, the Hindu God Lord Shiva. On the way to the falls, one can find a number of caves on the sides of
+            the
+            trail with a number of idols placed dedicated to Shiva.</p>
+        <p>The 14 km long trek is the highlight of this experience as you walk through the dense jungle, all the while
+            enjoying some of the most beautiful views of the forests and hills around the Mahadev Paani region. The
+            guide on
+            the trek will give you snippets of information about the Flora and Fauna indigenous to the region, making
+            this
+            an extensive learning experience as well. Reaching the falls will not only reward you with a refreshing
+            sight of
+            the waterfall but also with a chance of swimming and dipping in the cool waters of it.</p>
+            <div class="col">
+                <div class="card">
+                </div>
+            </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.4123920227903!2d77.62490211489597!3d23.300791684812836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c15b924ea1e95%3A0x431e259a9179f2a9!2sMahadev%20Paani%20Waterfalls!5e0!3m2!1sen!2sin!4v1665370268909!5m2!1sen!2sin"
+             allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="hed">BARNA DAM</h3>
+        <img src="{% static 'bdam.jpg' %}" class="rounded float-start lef" alt="...">
+        <p>The Barna Dam is a gravity dam on the Barna River in Badi tahsil Raisen district, Madhya Pradesh, India.
+            Barna
+            river is a major tributary of the Narmada River. It is about 100 km (62 mi) east of Bhopal.Dam was
+            constructed
+            by Madhaya Pradesh Water Resource Department. The primary purpose of the dam is irrigation and it was
+            completed
+            in 18.oct.1978.</p>
+            <p>
+                Barna Dam is also known as Barna Dam Irrigation Project. Its estimated cost is around 581 crores. The Barna Dam is built on the Barna River. The origin of Barna river is from Raisen district itself. Barna Dam is spread over an area of about 7700 hectares. The length of this dam is 432 meters. The height of this dam is 47.70 meters. The width is 4.60 m. There are 8 gates in Barna Dam. This dam is built for irrigation. Villages of Raisen and Sehore districts get benefit from this dam.Barna Dam is a famous tourist place in Raisen district and this dam is situated in Bari Tehsil. This dam is situated at a distance of about 5 kilometers from the main highway road. The road leading to Barna Dam is very bad at some distance. Barna Dam is easily accessible by both bike and car and has plenty of parking space.
+            </p>
+            <div class="col">
+                <div class="card">
+                </div>
+            </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.2734329589675!2d78.06007151489115!3d23.050434984938956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397e844ba7e87b21%3A0xe7b513e0b7f78514!2sBarna%20Dam!5e0!3m2!1sen!2sin!4v1665370090972!5m2!1sen!2sin"
+             allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="hed">GUPTA TEMPLE</h3>
+        <img src="{% static 'gupta.jpg' %}" class="rounded float-end ri" alt="...">
+        <p>The Gupta period may be described as ‘classic’ in the sense of the degree of perfection it achieved—something
+            that was never achieved before and has seldom been achieved since— and in the perfect balance and harmony of
+            ail
+            elements in style and iconography.
+            The Guptas were Brahmanical by religion with special devotion to Vishnu, but they showed exemplary tolerance
+            for
+            both Buddhism and Jainism.Puranic Hinduism with its three deities—Vishnu, Shiva and Shakti, as the consort
+            of
+            Shiva— came to the forefront.
+            While Shaivism developed in the south and south-east and Shaktism in eastern India and in some parts of
+            south-west Malabar, Vaishnavism, with its emphasis on Krishna as its main exponent, flourished mostly in the
+            northern and central parts of India. Popular worship was given formal sanction and temples and images
+            dedicated
+            to each of these cults came up everywhere.</p>
+        <p>The art of the Gupta period is marked by a deep spiritual quality and a vision which tries to record the
+            higher
+            and deeper truths of life. While the early Gupta period shows an emphasis on Hindu art, the climax of
+            Buddhist
+            art, with all the previous tendencies combined into a classical statement, comes during the later period.The
+            setting up of sanctuaries for the images of gods goes back perhaps to the second century BC. The devagrahas
+            of
+            the pre-Christian centuries which have been excavated are in an extremely fragmentary state.
+            But built of perishable materials they apparently afforded little scope for architectural principles. It was
+            in
+            the Gupta period that building with lasting materials began, such as dressed stone and brick. The Gupta
+            period
+            marks the beginning of Indian temple architecture. Out of the initial experimentation two major styles
+            evolved.
+        </p>
+        <div class="col">
+            <div class="card">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.468231575313!2d77.73801291489936!3d23.479638584723496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c0ff7457e2a35%3A0x63397ecb27fd3556!2sGupta%20Period%20Temple!5e0!3m2!1sen!2sin!4v1665370055346!5m2!1sen!2sin"
+                 allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+        <div class="foot">
+            <footer class="fut">
+                <details class="sum">
+                    <summary>Privacy Policy</summary>
+                    <p class="pr">This document contains the privacy and cookies policy for www.bhopaltourism7.pythonanywhere.com For
+                        the
+                        purposes of this privacy policy document the website shall be referred to as My Codeless Website. My
+                        Codeless
+                        Website is operated by Dutch Flavours, trading as My Codeless Website (we, us and our). Concerning
+                        the Data
+                        Protection Act 1998, we are the data controller.
+                        We understand that you do not want your personal information to be distributed indiscriminately. We
+                        aim to
+                        safeguard your privacy online. This document describes how we collect your information, what is done
+                        with the
+                        information, and the authority that you have concerning your information.
+                        My Codeless Website, you permit to the collection as well as use of information in accordance with
+                        this privacy
+                        policy.</p>
+                </details>
+                <details class="sum">
+                    <summary>About Us</summary>
+                    <p class="pr">We are Bhopal Tourism,We welcome you to the city of lakes, Bhopal, hope you like Bhopal and its
+                        surrounding
+                        tourist places. we have created this website in which we have covered almost all the tourist places
+                        of Bhopal
+                        and its surrounding areas.And also we have added the locations of all the tourist places: so that it
+                        is easy for
+                        you to reach them and we have added the fee and timing related of some places.Hope you like the
+                        website and it
+                        helps you.</p>
+                    <p class="pr">Thanks for visiting our website!</p>
+                </details>
+                <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                    <div class="col">
+                        <div class="card">
+                            <form action=" " method="POST" class="for">
+                                <h3 id="co">Contact Us</h3><br>
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"><b>Name</b></label>
+                                    <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                        id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label"><b>Email address</b></label>
+                                    <input type="text" name="email" placeholder="Your Email" class="form-control"
+                                        id="exampleInputPassword1" autocomplete="off" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label"><b>Mobile</b></label>
+                                    <input type="text" name="mobile" placeholder="Your Mobile Number" class="form-control"
+                                        id="exampleInputPassword1" autocomplete="off" required>
+                                </div>
+                                <div>
+                                    <label for="exampleInputPassword1" class="form-label"><b>Message</b></label>
+                                    <textarea class="form-control" id="zx" name="message" placeholder="Message"></textarea>
+                                </div><br>
+                                <button type="submit" class="btn btn-primary" style="width:200px;">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.8582087421!2d77.26580475125895!3d23.199347692490726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1676269555637!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/mybhopal/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bhopaltourism/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@bhopalyatra9230"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/BMCBhopal"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://bhopal.nic.in/en/"><i class="fa-brands fa-google"></i></a>
+                </div>
+                <p class="copyright">Copyright &COPY; 2023</p>
+            </footer>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>

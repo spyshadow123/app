@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0683059c5b.js" crossorigin="anonymous"></script>
+    <style>
+        
+
+        .ap p {
+            font-size: 18px;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+        }
+        .container {
+            background-color: bisque;
+        }
+        
+        .had {
+            background-image: linear-gradient(green, yellow);
+            padding: 10px;
+
+        }
+              
+
+        .pic {
+            height: 125px;
+            object-fit: cover;
+        }
+
+        .van {
+            font-weight: bolder;
+            font-style: italic;
+            transition: all 0.3s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .van:hover {
+            background-color: chartreuse;
+            text-transform: uppercase;
+            font-size: 22px;
+
+        }
+
+        .gg:hover {
+            background-color: aqua;
+        }
+
+        .tt {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .tt:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gh:hover {
+            background-color: rgb(90, 232, 90);
+        }
+
+        .ll {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .ll:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gj:hover {
+            background-color: coral;
+        }
+
+        .hh {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .hh:hover {
+            background-color: aqua;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gk:hover {
+            background-color: #82FCEC;
+        }
+
+        .mu {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mu:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gl:hover {
+            background-color: lightsalmon;
+        }
+
+        .pa {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .pa:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ga:hover {
+            background-color: #6effd6;
+        }
+
+        .dam {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .dam:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gs:hover {
+            background-color: rgb(246, 132, 246);
+        }
+
+        .mall {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mall:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(255, 38, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gd:hover {
+            background-color: cyan;
+        }
+
+        .more {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .more:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navbar {
+    background-image: url(../static/back6.jpg);}
+
+
+        .lef {
+            max-width: 400px;
+            margin-right: 10px;
+        }
+
+        .ri {
+            max-width: 400px;
+        }
+
+        .para {
+            margin-top: 30px;
+        }
+
+        .gol {
+            margin-top: 100px;
+        }
+
+        .indira {
+            margin-top: 100px;
+        }
+
+        .regional {
+            margin-top: 100px;
+        }
+
+        .tribal {
+            margin-top: 100px;
+        }
+
+        .state {
+            margin-top: 100px;
+        }
+
+        .science {
+            margin-top: 100px;
+        }
+
+        .museum h4 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+
+        }
+
+        .museum h4 {
+            margin-bottom: 20px;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 50px;
+            text-shadow: 1px 1px red;
+            transition: all 0.3s linear;
+            font-size: 20px;
+        }
+
+        .museum h4:hover {
+            font-size: 22px;
+        }
+
+        .lef {
+            height: 250px;
+            width: 250px;
+            margin-right: 10px;
+            transition: all 0.3s linear;
+        }
+
+        .lef:hover {
+            height: 300px;
+            width: 300px;
+        }
+
+        .ri {
+            height: 250px;
+            width: 250px;
+            transition: all 0.3s linear;
+        }
+
+        .ri:hover {
+            height: 300px;
+            width: 300px;
+        }
+
+        .museum p {
+            font-size: 18px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .para {
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hed {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 1px 1px red;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .tribal:hover {
+           
+            font-size: 18px;
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .indira:hover {
+           
+            font-size: 18px;
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .state:hover {
+           
+            font-size: 18px;
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .regional:hover {
+        
+            font-size: 18px;
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .gol:hover {
+           
+            font-size: 18px;
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .science:hover {
+       
+            font-size: 18px;
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .paz {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        .photo {
+            width: 150px;
+        }
+
+        .g {
+            display: flex;
+            justify-content: right;
+        }
+
+
+        /* Footer */
+        .foot{
+            margin-top: 20px;
+        }
+        
+        #co {
+            text-align: center;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            text-shadow: 1px 1px rgb(255, 2, 2);
+            color: rgb(17, 16, 16);
+        }
+        .for{
+            background-image: linear-gradient(rgb(100, 174, 100),rgb(208, 74, 174),rgb(212, 238, 81));
+        }
+        .sum summary {
+            margin-bottom: 20px;
+            transition: all 0.3s linear;
+            font-size: 18px;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+        }
+        .sum summary:hover{
+            font-size: 22px;
+            text-shadow: 1px 1px red;
+        }
+         .pr{
+            font-weight: bold;
+            font-size: 18px;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+        .fut .social {
+            text-align: center;
+            margin-top: 40px;
+        }
+    
+        .fut .social a {
+            font-size: 30px;
+            display: inline-block;
+            text-align: center;
+            margin: 0 43px;
+        }
+    
+        .fut .social a i {
+            transition: all 0.3s linear;
+        }
+    
+        .fut .social a i:hover {
+            font-size: 40px;
+        }
+        .fut .social a .fa-facebook {
+         color: blue;
+      }
+    
+      .fut .social a .fa-instagram {
+       color: rgb(230, 106, 127);
+      }
+    
+      .fut .social a .fa-youtube {
+       color: red;
+      }
+    
+      .fut .social a .fa-twitter {
+       color:  #1D9BF0;
+      }
+    
+      .fut .social a .fa-google {
+           color: rgb(64, 64, 201);
+      }
+        .fut .copyright {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(24, 22, 23);
+        }
+    
+        .map {
+            height: 480px;
+            width: auto;
+            margin-top: 0px;
+        }
+       
+    </style>
+
+
+</head>
+
+<body class="container">
+    
+    <header class="had">
+        <img src="{% static 'bhopal21.png' %}" class="img-fluid pic" alt="...">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a href="{% url 'index' %}"><img src="{% static 'ilove1.jpg' %}" class="rounded float-start photo"
+                        alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse g " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'temple' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Temples
+                            </a>
+                            <ul class="dropdown-menu gg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item tt" href="{% url 'birla' %}">Birla Mandir</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                                <li><a class="dropdown-item tt" href="{% url 'iskcon' %}">ISKCON Temple</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'karuna' %}">KarunaDham Temple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van " href="{% url 'lake' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lakes
+                            </a>
+                            <ul class="dropdown-menu gh" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item ll" href="{% url 'lower' %}">Lower Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'upper' %}">Upper
+                                        Lake/Bhojtal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'hotel' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hotels
+                            </a>
+                            <ul class="dropdown-menu gj" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item hh" href="{% url 'marriott' %}">Courtyard by
+                                        Marriott
+                                        Bhopal</a></li>
+                                <li><a class="dropdown-item hh" href="{% url 'jehan' %}">Jehan Numa Palace
+                                        Hotel</a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'radisson' %}">Radisson
+                                        Bhopal</a></li>
+
+                                <li><a class="dropdown-item hh" href="{% url 'taj' %}">Taj Lakefront
+                                        Bhopal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'museum' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Museums
+                            </a>
+                            <ul class="dropdown-menu gk" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mu" href="{% url 'golghar' %}">Golghar Museum</a>
+                                </li>
+                                <li><a class="dropdown-item mu" href="{% url 'indira' %}">Indira Gandhi
+                                        Rashtriya
+                                        Manav Sangrahalaya</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'tribal' %}">Madhya Pradesh
+                                        Tribal
+                                        Museum</a></li>
+
+
+                                <li><a class="dropdown-item mu" href="{% url 'science' %}">Regional Science
+                                        Center</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'regional' %}">Regional Museum
+                                        of
+                                        Natural History, Bhopal</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'state' %}">State Museum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'park' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parks
+                            </a>
+                            <ul class="dropdown-menu gl" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item pa" href="{% url 'chinar' %}">Chinar Park</a>
+                                </li>
+                                <li><a class="dropdown-item pa" href="{% url 'ekant' %}">Ekant Park</a></li>
+
+                                <li><a class="dropdown-item pa" href="{% url 'kamla' %}">Kamla Park</a></li>
+                                <li><a class="dropdown-item pa" href="{% url 'van' %}">Van Vihar National
+                                        Park</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'dam' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dams
+                            </a>
+                            <ul class="dropdown-menu ga" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item dam" href="{% url 'bhadbhada' %}">Bhadbhada
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kaliyasot' %}">Kaliyasot
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'mall' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Malls
+                            </a>
+                            <ul class="dropdown-menu gs" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mall" href="{% url 'ashima' %}">Ashima Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'aura' %}">Aura Mall</a></li>
+                                <li><a class="dropdown-item mall" href="{% url 'capital' %}">Capital Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'db' %}">DB City Mall</a></li>
+
+                                <li><a class="dropdown-item mall" href="{% url 'people' %}">Peoples Mall</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'more' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu gd" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item more" href="{% url 'amar' %}">Amargarh
+                                        Water Fall</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'bhim' %}">Bhimbetka Rock
+                                        Shelters</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                                        Bhojpur</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'halali' %}">Halali Dam</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'kolar' %}">Kolar Dam </a></li>
+                                <li><a class="dropdown-item more" href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'raisen' %}">Raisen</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'satpura' %}">Satpura National
+                                        Park,Hoshangabad</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'vidisha' %}">Vidisha</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h3 class="hed">MUSEUMS</h3>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="{% static 'science.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'regional.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'state.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'tribal2.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'indira4.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="para">
+        <p>Bhopal is one of the most visited tourist sites of Madhya Pradesh which is home to prized collections of
+            sculptures and antiques from far and wide. The remains of the ancient time of the Nawab Era is displayed in
+            museums, havelis and majestic mosques. The antiquities preserved in these museums set it apart from the
+            other museums in the country.there are some museums shown below.</p>
+    </div>
+    <div class="museum">
+        <div>
+            <div class="gol">
+                <h4><a href="{% url 'golghar' %}">Golghar Museum</a></h4>
+                <a href="{% url 'golghar' %}"><img src="{% static 'gol.jpeg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>Golghar Museum is a museum in Bhopal, India.It showcases a variety of arts, handicraft and social
+                    life from the Nawab-era.The museum was inaugurated in April 2013 by Culture Minister Laxmikant
+                    Sharma.The major collections here denote the cultural and political history of the Princely State of
+                    Bhopal.It is a very beautiful building situated near bob e Ali Stadium near Pari bazar locally known
+                    as Shahjahanbad in Old Bhopal City. It is a round shaped circular Building which is very colorful
+                    due its decorative glasses and doors. It is also known as Gulshan-e-Alam.It is built by Nawab Shah
+                    Jahan Begum under her rule during1868-1901. This spectacular building consists of 32 beautifully
+                    crafted decorative doors. It is having round galleries having stairs which leads upwards on the
+                    roof. The upper chamber has a dome, the pillars are round and the doors are ornate. The dome has
+                    been painted using the colors purple, yellow, orange, red, brown and green. Upstairs is a circular
+                    veranda, covered with a sheet of tin, which is based on wooden poles. Originally it had a Persian
+                    style garden, known as Jannat Bagh.Begum, initially used it as a zoo that housed a collection of
+                    different birds. Later, Golghar was used by the Nawab dynasty as his office. It was then used by the
+                    Government Railway Police as its office. An attempt has been made to display a glimpse of the
+                    social, cultural and landscape of the time of the Bhopal Nawab.Since 2013 State Archaeological
+                    department has conserved and maintained this as a local City museum. Clothes, diaries, House hold
+                    articles, photographs of Nawab’s era has been displayed here which gives a glimpse of the social,
+                    cultural and heritage of the City.</p>
+            </div>
+        </div>
+        <div>
+            <div class="indira">
+                <h4><a href="{% url 'indira' %}">Indira Gandhi Rashtriya Manav Sangrahalaya - National Museum of
+                        Mankind</a></h4>
+                <a href="{% url 'indira' %}"><img src="{% static 'indira3.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Any exploration of India's greatest museum is incomplete without a visit to the Indira Gandhi
+                    Rashtriya Manav Sangrahalaya, Bhopal. The museum lies in a prehistoric landscape with evidence of
+                    prehistoric human settlement in its premises at Bhopal- the capital city of Madhya Pradesh. Covering
+                    an area of about 200 acres of undulating terrain in the Shamla Hills, it is one of the largest and
+                    leading anthropological museums in India. Aesthetically curated open-air exhibitions and components
+                    with the most enduring indoor exhibitions, it promises to live up to the expectations of museum
+                    visitors. This museum depicts the story of mankind in time and space. It offers an opportunity to
+                    explore the most subtle but artistic sensibilities of the rich Indian culture and heritage through
+                    its appealing exhibitions. It has 8 open-air exhibitions and 12 indoor galleries. Impressive
+                    periodical and travelling exhibitions of the museum on various topics are highly receptive and
+                    friendly to the visitors. Moreover, museum activities of this museum are designed to make
+                    information educative and entertaining. A visitor-friendly environment with an improvised form of
+                    interactive displays offers a new taste to museum visits. Education programmes, workshops, seminars,
+                    symposia, group discussions. conferences, cultural programmes, regional and cultural festivals,
+                    lectures, artists camps, etc. are some regular activities of the museum. Museum Outreach Activities
+                    ranging from artists camps and cultural exchange programmes to the organisation of grand
+                    community-oriented cultural festivals are some of the community-friendly activities of the museum.
+                    The reference library of IGRMS has a rich collection of documents on anthropology, archaeology,
+                    museology, tribal study, pre-history, art, architecture, etc. It provides abundant research
+                    opportunities for students, researchers, designers, filmmakers etc. and it is an important source of
+                    documentation for the university community and museum professionals.</p>
+            </div>
+        </div>
+        <div>
+            <div class="tribal">
+                <h4><a href="{% url 'tribal' %}">Madhya Pradesh Tribal Museum</a></h4>
+                <a href="{% url 'tribal' %}"><img src="{% static 'tribal.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>Former President Pranab Mukherjee inaugurated the museum of Tribal Heritage on June 6, 2013. It was
+                    created and dedicated to the tribal people of Madhya Pradesh. The vast gallery showcases the way of
+                    life of seven significant tribes of Madhya Pradesh - The Bheel, Gond, Korku, Baiga, Sahariya,
+                    Bhariya and Kol. Spread across 7 acres of land, Tribal Museum also holds an auditorium, a small
+                    boutique shop of artefacts and a restaurant. It stands out from the rest of museums in the country
+                    because of the way the exhibits are canvassed. Although the artworks are difficult to decipher, it
+                    beautifully depicts the tales of tribes. The museum occasionally organises activities based on the
+                    cultural forms such as talk show, poetry, vocal play, film and dance. With over 30% of the tribal
+                    population, this rich repository of traditional artwork and aesthetics is commissioned by the
+                    Government of Madhya Pradesh.</p>
+            </div>
+        </div>
+        <div>
+            <div class="science">
+                <h4><a href="{% url 'science' %}">Regional Science Center</a></h4>
+                <a href="{% url 'science' %}"><img src="{% static 'science.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>The Regional Science Center Bhopal was inaugurated on 12th January 1995 by the then president of
+                    India late Shankar Dayal Sharma. This center is one of the 25 constituent units of National Council
+                    of Science Museums (NCSM) which is an autonomous scientific organization under the Ministry of
+                    Culture, Govt. of India, engaged in popularizing Science and Technology amongst students in
+                    particular and the masses in general, through a wide range of activities and interactive
+                    programmes.The Regional Science Centre, Bhopal (RSCB) is located in the Shyamla Hills area of
+                    Bhopal, India.[2] It is aimed at popularizing science and technology among the people, particularly
+                    the students. It is one of the constituent units of the National Council of Science Museums or
+                    NCSM. RSCB was inaugurated on 12 January 1995 by the then president of India Shankar Dayal
+                    Sharma.</p>
+                <p>
+                    The Centre has been functioning in Bhopal since 1995 with the primary objective of popularization of
+                    Science & Technology, inculcation of scientific temper, and encouraging attitude of curiosity among
+                    the public in general and the students in particular. The Centre is the only Science Centre in the
+                    state of Madhya Pradesh (a central state of India). The Centre is visited by the general public and
+                    a large number of school & college students.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="regional">
+                <h4><a href="{% url 'regional' %}">Regional Museum of Natural History</a></h4>
+                <a href="{% url 'regional' %}"><img src="{% static 'regional1.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>The Regional Museum of Natural History, Bhopal is a branch of the National Museum of Natural History,
+                    New Delhi, located in the Environment Complex on Shahpura Lake in Bhopal.The museum was inaugurated
+                    on 29 September 1997,by the then Minister of Environment and Forests of India, Saifuddin Soz. The
+                    program was chaired by the then Chief Minister of Madhya Pradesh, Digvijaya Singh.
+                    The museum's collection tells the story of the interactions between humans and the natural world,
+                    specifically in Central India, and its galleries are accompanied by transcripts, translations and
+                    audio tours and include a replica of a Rajasaurus skull.
+                    Small and beautiful museum of Natural History. It takes to closer to the nature through various
+                    beautiful and informative models.It is surrounded by lush green garden.The primary role of a natural
+                    history museum is to provide the scientific community with current and historical specimens for
+                    their research, which is to improve our understanding of the natural world. Some museums have public
+                    exhibits to share the beauty and wonder of the natural world with the public; these are referred to
+                    as 'public museums'. Some museums feature non-natural history collections in addition to their
+                    primary collections, such as ones related to history, art, and science.</p>
+            </div>
+        </div>
+        <div>
+            <div class="state">
+                <h4><a href="{% url 'state' %}">State Museum of Madhya Pradesh</a></h4>
+                <a href="{% url 'state' %}"><img src="{% static 'state2.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>At a distance of 8 km from Bhopal Junction, State Museum Bhopal is an archaeological museum located
+                    on Shyamla Hills in Bhopal, Madhya Pradesh. Situated opposite to Regional Science Centre, it is one
+                    of the popular museums in Madhya Pradesh, and among the prominent places to visit in Bhopal.The
+                    museum was established in 1964. Its new building was inaugurated on 2 November 2005, by the Madhya
+                    Pradesh Chief Minister, Shivraj Singh Chouhan. The building is an architectural marvel. The best of
+                    art is represented in the museum, along with the culture of the state.
+                    The State Museum was established as Edward Museum in 1909 AD by the rule of Bhopal state and
+                    governed with the name of Ajayabghar in the present central library building. After the formation of
+                    Madhya Pradesh state, the museum was shifted to the building at Banganga road and was called as
+                    Bhopal Museum. In 2005, the State Museum, Bhopal was inaugurated in a new form in a newly
+                    constructed building and is one of the beautiful specimens of architecture.The museum includes 16
+                    galleries, which have been categorised by theme.[3] The galleries in the museum showcase some
+                    prehistoric articles and fossils including excavated objects, paintings, epigraphs, manuscripts,
+                    textiles, royal collection, sculptures, documents, artifacts associated with the freedom struggle,
+                    postal stamps, autographs, miniature paintings, coins, arms and weapons, etc. </p>
+            </div>
+        </div>
+    </div>
+    <div class="paz">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item ">
+                    <a class="page-link " href="{% url 'hotel' %}">Previous</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="{% url 'temple' %}">1</a></li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="{% url 'lake' %}">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="{% url 'hotel' %}">3</a></li>
+                <li class="page-item">
+                <li class="page-item active"><a class="page-link" href="{% url 'museum' %}">4</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'park' %}">5</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'dam' %}">6</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'mall' %}">7</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'more' %}">8</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'park' %}">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="foot">
+        <footer class="fut">
+            <details class="sum">
+                <summary>Privacy Policy</summary>
+                <p class="pr">This document contains the privacy and cookies policy for www.bhopaltourism7.pythonanywhere.com For
+                    the
+                    purposes of this privacy policy document the website shall be referred to as My Codeless Website. My
+                    Codeless
+                    Website is operated by Dutch Flavours, trading as My Codeless Website (we, us and our). Concerning
+                    the Data
+                    Protection Act 1998, we are the data controller.
+                    We understand that you do not want your personal information to be distributed indiscriminately. We
+                    aim to
+                    safeguard your privacy online. This document describes how we collect your information, what is done
+                    with the
+                    information, and the authority that you have concerning your information.
+                    My Codeless Website, you permit to the collection as well as use of information in accordance with
+                    this privacy
+                    policy.</p>
+            </details>
+            <details class="sum">
+                <summary>About Us</summary>
+                <p class="pr">We are Bhopal Tourism,We welcome you to the city of lakes, Bhopal, hope you like Bhopal and its
+                    surrounding
+                    tourist places. we have created this website in which we have covered almost all the tourist places
+                    of Bhopal
+                    and its surrounding areas.And also we have added the locations of all the tourist places: so that it
+                    is easy for
+                    you to reach them and we have added the fee and timing related of some places.Hope you like the
+                    website and it
+                    helps you.</p>
+                <p class="pr">Thanks for visiting our website!</p>
+            </details>
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <form action=" " method="POST" class="for">
+                            <h3 id="co">Contact Us</h3><br>
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><b>Name</b></label>
+                                <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Email address</b></label>
+                                <input type="text" name="email" placeholder="Your Email" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Mobile</b></label>
+                                <input type="text" name="mobile" placeholder="Your Mobile Number" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label"><b>Message</b></label>
+                                <textarea class="form-control" id="zx" name="message" placeholder="Message"></textarea>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary" style="width:200px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.8582087421!2d77.26580475125895!3d23.199347692490726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1676269555637!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/mybhopal/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bhopaltourism/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@bhopalyatra9230"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/BMCBhopal"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://bhopal.nic.in/en/"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p class="copyright">Copyright &COPY; 2023</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>

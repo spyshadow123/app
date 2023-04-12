@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0683059c5b.js" crossorigin="anonymous"></script>
+    <style>
+       
+
+        .ap p {
+            font-size: 18px;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;           
+        }
+
+        .container {
+            background-color: bisque;
+        }
+        
+        .had {
+            background-image: linear-gradient(green, yellow);
+            padding: 10px;
+
+        }
+              
+
+        .pic {
+            height: 125px;
+            object-fit: cover;
+        }
+
+        .van {
+            font-weight: bolder;
+            font-style: italic;
+            transition: all 0.3s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .van:hover {
+            background-color: chartreuse;
+            text-transform: uppercase;
+            font-size: 22px;
+
+        }
+
+        .gg:hover {
+            background-color: aqua;
+        }
+
+        .tt {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .tt:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gh:hover {
+            background-color: rgb(90, 232, 90);
+        }
+
+        .ll {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .ll:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gj:hover {
+            background-color: coral;
+        }
+
+        .hh {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .hh:hover {
+            background-color: aqua;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gk:hover {
+            background-color: #82FCEC;
+        }
+
+        .mu {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mu:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gl:hover {
+            background-color: lightsalmon;
+        }
+
+        .pa {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .pa:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .ga:hover {
+            background-color: #6effd6;
+        }
+
+        .dam {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .dam:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gs:hover {
+            background-color: rgb(246, 132, 246);
+        }
+
+        .mall {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .mall:hover {
+            background-color: chartreuse;
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(255, 38, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gd:hover {
+            background-color: cyan;
+        }
+
+        .more {
+            font-size: 15px;
+            transition: all 0.3s linear;
+        }
+
+        .more:hover {
+            background-color: yellow;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navbar {
+    background-image: url(../static/back6.jpg);}
+
+        .lef {
+            max-width: 400px;
+            margin-right: 10px;
+        }
+
+        .ri {
+            max-width: 400px;
+        }
+
+        .para {
+            margin-top: 30px;
+        }
+
+        .kaliya {
+            margin-top: 100px;
+        }
+
+        .kerwa {
+            margin-top: 100px;
+        }
+
+        .bhadbhada {
+            margin-top: 100px;
+        }
+
+        .kolar {
+            margin-top: 100px;
+        }
+
+        .halali {
+            margin-top: 100px;
+        }
+
+        .dm h4 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+        }
+
+        .dm h4 {
+            margin-bottom: 20px;
+            text-shadow: 1px 1px red;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+
+        .dm p {
+            font-size: 18px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .hed {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 1px 1px red;
+            font-style: italic;
+            font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .para {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .kaliya:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .kerwa:hover {
+           
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .kolar:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .halali:hover {
+           
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .bhadbhada:hover {
+            
+            transition: background-color, 2s linear;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+        .paz {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paz a {
+            background-color: #6effd6;
+        }
+
+        
+        .photo{
+        width:150px;
+    }
+    .g{
+        display:flex;
+        justify-content: right;
+    }
+
+    /* Footer */
+    .foot{
+        margin-top: 20px;
+    }
+    
+    #co {
+        text-align: center;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        text-shadow: 1px 1px rgb(255, 2, 2);
+        color: rgb(17, 16, 16);
+    }
+    .for{
+        background-image: linear-gradient(rgb(100, 174, 100),rgb(208, 74, 174),rgb(212, 238, 81));
+    }
+    .sum summary {
+        margin-bottom: 20px;
+        transition: all 0.3s linear;
+        font-size: 18px;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+    }
+    .sum summary:hover{
+        font-size: 22px;
+        text-shadow: 1px 1px red;
+    }
+     .pr{
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        font-family: Cambria, Cochin Georgia, Times, 'Times New Roman', serif;
+    }
+    .fut .social {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fut .social a {
+        font-size: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 43px;
+    }
+
+    .fut .social a i {
+        transition: all 0.3s linear;
+    }
+
+    .fut .social a i:hover {
+        font-size: 40px;
+    }
+    .fut .social a .fa-facebook {
+     color: blue;
+  }
+
+  .fut .social a .fa-instagram {
+   color: rgb(230, 106, 127);
+  }
+
+  .fut .social a .fa-youtube {
+   color: red;
+  }
+
+  .fut .social a .fa-twitter {
+   color:  #1D9BF0;
+  }
+
+  .fut .social a .fa-google {
+       color: rgb(64, 64, 201);
+  }
+    .fut .copyright {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(24, 22, 23);
+    }
+
+    .map {
+        height: 480px;
+        width: auto;
+        margin-top: 0px;
+    }
+   
+    </style>
+
+
+</head>
+
+<body class="container">
+   
+    <header class="had">
+        <img src="{% static 'bhopal21.png' %}" class="img-fluid pic" alt="...">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ">
+                <a href="{% url 'index' %}"><img src="{% static 'ilove1.jpg' %}" class="rounded float-start photo"
+                        alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse g " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'index' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'temple' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Temples
+                            </a>
+                            <ul class="dropdown-menu gg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item tt" href="{% url 'birla' %}">Birla Mandir</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'gufa' %}">Gufa Mandir</a></li>
+                                <li><a class="dropdown-item tt" href="{% url 'iskcon' %}">ISKCON Temple</a>
+                                </li>
+                                <li><a class="dropdown-item tt" href="{% url 'karuna' %}">KarunaDham Temple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van " href="{% url 'lake' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Lakes
+                            </a>
+                            <ul class="dropdown-menu gh" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item ll" href="{% url 'lower' %}">Lower Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'shahpura' %}">Shahpura Lake</a></li>
+                                <li><a class="dropdown-item ll" href="{% url 'upper' %}">Upper
+                                        Lake/Bhojtal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'hotel' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hotels
+                            </a>
+                            <ul class="dropdown-menu gj" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item hh" href="{% url 'marriott' %}">Courtyard by
+                                        Marriott
+                                        Bhopal</a></li>
+                                <li><a class="dropdown-item hh" href="{% url 'jehan' %}">Jehan Numa Palace
+                                        Hotel</a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'noor' %}">Noor-Us-Sabah Palace
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item hh" href="{% url 'radisson' %}">Radisson
+                                        Bhopal</a></li>
+
+                                <li><a class="dropdown-item hh" href="{% url 'taj' %}">Taj Lakefront
+                                        Bhopal</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'museum' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Museums
+                            </a>
+                            <ul class="dropdown-menu gk" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mu" href="{% url 'golghar' %}">Golghar Museum</a>
+                                </li>
+                                <li><a class="dropdown-item mu" href="{% url 'indira' %}">Indira Gandhi
+                                        Rashtriya
+                                        Manav Sangrahalaya</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'tribal' %}">Madhya Pradesh
+                                        Tribal
+                                        Museum</a></li>
+
+
+                                <li><a class="dropdown-item mu" href="{% url 'science' %}">Regional Science
+                                        Center</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'regional' %}">Regional Museum
+                                        of
+                                        Natural History, Bhopal</a></li>
+                                <li><a class="dropdown-item mu" href="{% url 'state' %}">State Museum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'park' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parks
+                            </a>
+                            <ul class="dropdown-menu gl" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item pa" href="{% url 'chinar' %}">Chinar Park</a>
+                                </li>
+                                <li><a class="dropdown-item pa" href="{% url 'ekant' %}">Ekant Park</a></li>
+
+                                <li><a class="dropdown-item pa" href="{% url 'kamla' %}">Kamla Park</a></li>
+                                <li><a class="dropdown-item pa" href="{% url 'van' %}">Van Vihar National
+                                        Park</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'dam' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dams
+                            </a>
+                            <ul class="dropdown-menu ga" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item dam" href="{% url 'bhadbhada' %}">Bhadbhada
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kaliyasot' %}">Kaliyasot
+                                        Dam</a></li>
+                                <li><a class="dropdown-item dam" href="{% url 'kerwa' %}">Kerwa Dam</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'mall' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Malls
+                            </a>
+                            <ul class="dropdown-menu gs" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item mall" href="{% url 'ashima' %}">Ashima Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'aura' %}">Aura Mall</a></li>
+                                <li><a class="dropdown-item mall" href="{% url 'capital' %}">Capital Mall</a>
+                                </li>
+                                <li><a class="dropdown-item mall" href="{% url 'db' %}">DB City Mall</a></li>
+
+                                <li><a class="dropdown-item mall" href="{% url 'people' %}">Peoples Mall</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle van" href="{% url 'more' %}"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu gd" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item more" href="{% url 'amar' %}">Amargarh
+                                        Water Fall</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'bhim' %}">Bhimbetka Rock
+                                        Shelters</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'bhoj' %}">Bhojeshwar Temple,
+                                        Bhojpur</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'halali' %}">Halali Dam</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'kolar' %}">Kolar Dam </a></li>
+                                <li><a class="dropdown-item more" href="{% url 'pachmarhi' %}">Pachmarhi</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'raisen' %}">Raisen</a></li>
+                                <li><a class="dropdown-item more" href="{% url 'salkanpur' %}">Salkanpur Temple</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'sanchi' %}">Sanchi Stupa</a>
+                                </li>
+                                <li><a class="dropdown-item more" href="{% url 'satpura' %}">Satpura National
+                                        Park,Hoshangabad</a></li>
+
+                                <li><a class="dropdown-item more" href="{% url 'vidisha' %}">Vidisha</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" navbar-brand van" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h3 class="hed">DAMS</h3>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="{% static 'bhadbhada1.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'kaliya1.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'kerwa.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'kolar.jpg' %}" class="d-block w-100" alt="..." width="1450" height="500">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="para">
+        <p>Bhopal is the capital city of the Indian state of Madhya Pradesh and the administrative headquarters of both
+            Bhopal district and Bhopal division. It is known as the City of Lakes. Due to its various natural and
+            artificial lakes. It is also one of the greenest cities in India.
+            There are many dams in Bhopal.Top 6 Dams in Bhopal District, Madhya Pradesh.</p>
+    </div>
+    <div class="dm">
+        <div>
+            <div class="bhadbhada">
+                <h4><a href="{% url 'bhadbhada' %}">Bhadbhada Dam</a></h4>
+                <a href="{% url 'bhadbhada' %}"><img src="{% static 'bhadbhada.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>The Bhadbhada dam is a set of 11 sluice gates at the south-east corner of Upper lake in Bhopal. It
+                    was constructed in 1965. The gates are used to control the outflow of water from the lake to
+                    Kaliasote river, and are usually opened only when the city receives heavy rainfall during the
+                    monsoon season. It has a full tank level of 1666.80 feets.Lovely environment, good restaurant and a
+                    good place to spend a summer evening or a winter afternoon.This is good area and location for small
+                    picnic with family. We have spent time and enjoyed there. Good experience.Come visit here for a fun
+                    filled activity on a rainy day and if you are lucky you will see gates open of the dam.
+                    Bhadbhada Dam is one of the main dams of Bhopal city. This dam is built across the Kaliasot river.
+                    This dam is very beautiful. There is also a fountain in this dam. A very beautiful view of the dam
+                    is available here. The gates of the dam are opened during the rainy season, due to which a lot of
+                    water flows through the gates and a very beautiful sight is seen. Bhadbhada hill is also visible
+                    here. This place of Bhopal city is full of greenery. It feels great to be here. The Bhadbhada Dam is
+                    situated just ahead of the promenade. One can easily reach here.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="halali">
+                <h4><a href="{% url 'halali' %}">Halali Dam</a></h4>
+                <a href="{% url 'halali' %}"><img src="{% static 'halali1.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Halali Dam is a lakeside reservoir built on the Halali River in Raisen. Formerly known as Thal River,
+                    the pristine lake is 47 km from Bhopal to Sanchi is Halali the tributary of Betwa river. The
+                    catchment area of this project is around 699 sq km. The colossal dam is quite popular among locals
+                    of Bhopal as an excellent spot for picnic and boat rides. Apart from this, the reservoir is home to
+                    aquatic life forms such as catla, mrigal, mystus, rohu and chitala.The Halali reservoir is a
+                    reservoir in Madhya Pradesh state of India, spanning Bhopal, Raisen, and Vidisha districts. It is
+                    built on the Halali River, and lies 40 km northwards from the state capital Bhopal.</p>
+                <p>
+                    Halali Dam is also known as Samrat Ashok Sagar Project and Halali Project. This dam is built on
+                    Halali river. This dam is spread over a very large area. Halali Dam is located in Bhopal city about
+                    10 km from Bhopal Vidisha Highway. A resort has been built by MP Tourism in Halali Dam. Here you can
+                    stay and enjoy water activities. Here you can enjoy boat ride. The view of Halali Dam is very
+                    beautiful. If the rainy season comes here, this dam is full of water and the water flows
+                    overflowing, which looks like a very beautiful sight. If you go further here, you can also see a
+                    beautiful waterfall.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="kaliya">
+                <h4><a href="{% url 'kaliyasot' %}">Kaliasot Dam</a></h4>
+                <a href="{% url 'kaliyasot' %}"><img src="{% static 'kaliya2.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>Kaliyasot Dam, Bhopal, Madhya Pradesh, India.
+                    Kolar Road Near Suicide Point, Kaliyasot Dam Bhopal, Madhya Pradesh.
+                    If you are an adventure freak then various activities like rafting, paragliding and mud challenge
+                    rallies are held here at various intervals.The temple's clean water has attracted Bollywood for its
+                    sets.
+                    KALIYASOT DAM, BHOPAL is a Water Sports / Dam / Lake/Pond / Paragliding and Sky Diving
+                    BHOPAL - Popularly known as “the city of Lakes”, Bhopal is the capital of Madhya Pradesh, located
+                    centrally in India. It is the greenest city of the state; It is well connected through Airport with
+                    all the major cities of India and has a big railway station and a good network of highways and
+                    roads. Bhopal has a sub-tropical and humid climate, with dry winter, hot summers and humid monsoons.
+                    The diversification makes the city a multi-cultured and multi-coloured place.It also provides an
+                    unbreakable link with the past traditions. The city is divided into two parts because of the two
+                    beautiful lakes present here. The lower lake is called as “chhota talab” and the upper lake is
+                    called as “bhojtal”.</p>
+                <p>
+                    Kaliyasot Dam is one of the main dams of Bhopal city. This dam is built on the Kaliasot river. This
+                    dam is built in the middle of dense forests. There are crocodiles and alligators in this dam. This
+                    dam is spread over a very large area. Kaliyasot Dam is a beautiful place in the city of Bhopal. This
+                    dam is surrounded by hills from all sides. A temple is found in the middle of this dam. This temple
+                    is built in an island. This temple is called Vishwanath temple. This temple is dedicated to Lord
+                    Shiva. There are many viewpoints built in Kaliyasot Dam. Here one gets to see another temple on the
+                    hill, which is the Shiva temple.
+
+                    You can come during the rainy season to visit Kaliasot Dam. Here you get to see a very beautiful
+                    view during the rainy season, because the water fills all the way and opens its gates, the view of
+                    which looks very beautiful. The main road is in front of the gate of the dam. Standing there, you
+                    can see the view of the dam. Here one gets to see the beautiful view of the forest on both sides.
+                    Here one gets to see beautiful views on both sides of the Kaliyasot river.
+                </p>
+
+            </div>
+        </div>
+        <div>
+            <div class="kerwa">
+                <h4><a href="{% url 'kerwa' %}">Kerwa Dam</a></h4>
+                <a href="{% url 'kerwa' %}"><img src="{% static 'kerwa3.jpg' %}" class="rounded float-end ri"
+                        alt="..."></a>
+                <p>Kerwa Dam… It’s a place where most of our childhood picnics have taken place. It’s a location that
+                    has always been in the news for being one of the favourite haunts of the many tigers that inhabit
+                    the jungles near Bhopal. It is also the place that people visit for enjoying adventures like zipline
+                    around Bhopal. However, it might come as a surprise to many that this popular picnic spot is also an
+                    amazing trekking place near Bhopal, with many shot and long duration trekking trails that are
+                    totally unheard of.
+                    Kerwa Dam and its surrounding jungles fall within the Samardha Forest Range and serve as the green
+                    lungs of the city. The place enjoys close proximity with a beautiful water body – the expansive
+                    Kerwa Dam Reservoir. You can enjoy the experience of flying over this lake with the zipline in
+                    Bhopal. You can experience the ultimate adrenaline rush with rock climbing or Rappelling at Kerwa
+                    Dam on its 110ft natural rock surface. You can also explore the amazing jungles of Kerwa and visit
+                    hidden caves, rock paintings and tribal villages around the base.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="kolar">
+                <h4><a href="{% url 'kolar' %}">Kolar Dam</a></h4>
+                <a href="{% url 'kolar' %}"><img src="{% static 'kolar3.jpg' %}" class="rounded float-start lef"
+                        alt="..."></a>
+                <p>Kolar dam is located on 35 kms south-west of Bhopal city. It is built on Kolar river which is a
+                    tributary river of Narmada river. This dam is constructed near Lawakhweri village in Sehore
+                    district. This dam is mainly constructed for the purpose of arranging water availability to Bhopal
+                    city and for irrigation purpose in surrounding areas. Height of Kolar dam is 45 meters and its water
+                    storage capacity is 265 MCM. Dam water is a raw water source for Kolar Water Treatment Plant (KTP)
+                    which is managed by Public Health Engineering Department (PHED) of Madhya Pradesh. This plant avails
+                    approx. 153 MLD treated water to Bhopal city which is 60% of total water supply to city. Its water
+                    treatment plant is largest and best among water treatment plants arranging water supply to Bhopal
+                    city. It shows the importance of this dam to Bhopal. Recently it is gaining popularity as a nature
+                    tourism spot. It is counted among tourist spots around Bhopal city. Tourists from Bhopal often visit
+                    Kolar dam and enjoy the natural beauty of this area. In coming time, it will become a popular
+                    tourist spot as tourism department is working in this side.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="paz">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item ">
+                    <a class="page-link " href="{% url 'park' %}">Previous</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="{% url 'temple' %}">1</a></li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="{% url 'lake' %}">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="{% url 'hotel' %}">3</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'museum' %}">4</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'park' %}">5</a></li>
+                <li class="page-item">
+                <li class="page-item active"><a class="page-link" href="{% url 'dam' %}">6</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'mall' %}">7</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="{% url 'more' %}">8</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="{% url 'mall' %}">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="foot">
+        <footer class="fut">
+            <details class="sum">
+                <summary>Privacy Policy</summary>
+                <p class="pr">This document contains the privacy and cookies policy for www.bhopaltourism7.pythonanywhere.com For
+                    the
+                    purposes of this privacy policy document the website shall be referred to as My Codeless Website. My
+                    Codeless
+                    Website is operated by Dutch Flavours, trading as My Codeless Website (we, us and our). Concerning
+                    the Data
+                    Protection Act 1998, we are the data controller.
+                    We understand that you do not want your personal information to be distributed indiscriminately. We
+                    aim to
+                    safeguard your privacy online. This document describes how we collect your information, what is done
+                    with the
+                    information, and the authority that you have concerning your information.
+                    My Codeless Website, you permit to the collection as well as use of information in accordance with
+                    this privacy
+                    policy.</p>
+            </details>
+            <details class="sum">
+                <summary>About Us</summary>
+                <p class="pr">We are Bhopal Tourism,We welcome you to the city of lakes, Bhopal, hope you like Bhopal and its
+                    surrounding
+                    tourist places. we have created this website in which we have covered almost all the tourist places
+                    of Bhopal
+                    and its surrounding areas.And also we have added the locations of all the tourist places: so that it
+                    is easy for
+                    you to reach them and we have added the fee and timing related of some places.Hope you like the
+                    website and it
+                    helps you.</p>
+                <p class="pr">Thanks for visiting our website!</p>
+            </details>
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <form action=" " method="POST" class="for">
+                            <h3 id="co">Contact Us</h3><br>
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label"><b>Name</b></label>
+                                <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Email address</b></label>
+                                <input type="text" name="email" placeholder="Your Email" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label"><b>Mobile</b></label>
+                                <input type="text" name="mobile" placeholder="Your Mobile Number" class="form-control"
+                                    id="exampleInputPassword1" autocomplete="off" required>
+                            </div>
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label"><b>Message</b></label>
+                                <textarea class="form-control" id="zx" name="message" placeholder="Message"></textarea>
+                            </div><br>
+                            <button type="submit" class="btn btn-primary" style="width:200px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.8582087421!2d77.26580475125895!3d23.199347692490726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1676269555637!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/mybhopal/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bhopaltourism/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@bhopalyatra9230"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/BMCBhopal"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://bhopal.nic.in/en/"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <p class="copyright">Copyright &COPY; 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
